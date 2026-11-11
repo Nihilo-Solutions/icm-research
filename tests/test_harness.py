@@ -206,6 +206,36 @@ def test_snapshot_search_results_are_cited_to_the_api_url():
         assert quotes["S1"] == ["Key Vault | | | Operations | 0.03 | 10K"]
 
 
+def test_pricing_uses_total_cache_writes_not_first_iteration_breakdown():
+    from llm import Pricing
+    pr = Pricing(load_config()["pricing"], "5m")
+    usage = {"input_tokens": 14, "output_tokens": 51051, "cache_read_input_tokens": 802957,
+             "cache_creation_input_tokens": 397935,
+             "cache_creation": {"ephemeral_5m_input_tokens": 1275, "ephemeral_1h_input_tokens": 0},
+             "server_tool_use": {"web_search_requests": 16},
+             "iterations": [{"cache_creation": {"ephemeral_5m_input_tokens": 1275}}, {"cache_creation": {"ephemeral_5m_input_tokens": 396660}}]}
+    assert round(pr.cost("claude-fable-5-2", usage), 2) == 6.34
+
+
+def test_recover_turn_reuses_paid_research():
+    import icm
+    with tempfile.TemporaryDirectory() as td:
+        class R:
+            dir = Path(td)
+            events = []
+            def raw_dir(self, stage):
+                p = Path(td) / "raw" / stage; p.mkdir(parents=True, exist_ok=True); return p
+            def log_event(self, e): self.events.append(e)
+        r = R()
+        d = r.raw_dir("02-research")
+        (d / "WP-Q07.a0.00.response.json").write_text(json.dumps({"model": "claude-fable-5-2", "stop_reason": "pause_turn", "content": [{"type": "text", "text": "a"}], "usage": {"output_tokens": 1}}))
+        (d / "WP-Q07.a0.01.response.json").write_text(json.dumps({"model": "claude-fable-5-2", "stop_reason": "end_turn", "content": [{"type": "text", "text": "b"}], "usage": {"output_tokens": 2}}))
+        (d / "WP-Q07.extract.a0.00.response.json").write_text("{}")
+        res = icm.recover_turn(r, "02-research", "WP-Q07")
+        assert res.text == "ab" and res.usage["output_tokens"] == 3 and res.cost_usd == 0
+        assert icm.recover_turn(r, "02-research", "WP-Q08") is None
+
+
 def test_strip_dashes():
     assert strip_dashes("a \u2014 b, 1\u20132")[0] == "a, b, 1 to 2"
 

@@ -2,6 +2,28 @@
 
 | Work package | Status | Claims by status | Searches | Fetches | Model(s) | Cost |
 |---|---|---|---|---|---|---|
-| WP-B1 | done | confirmed 37, corrected 4, inference 6, unverified 6 | 12 | 21 | claude-fable-5-2 | $1.207 |
-| WP-Q05A | done | confirmed 68, inference 13, unverified 8 | 12 | 20 | claude-fable-5-2 | $1.782 |
-| WP-X1 | done | confirmed 20, estimate 5, inference 5, unverified 14 | 17 | 15 | claude-fable-5-2 | $2.002 |
+| WP-B1 | kept from earlier attempt | | | | | |
+| WP-B2 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q01 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q02 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q03 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q04A | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q04B | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q04C | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q05A | kept from earlier attempt | | | | | |
+| WP-Q05B | error: APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'invalid_request_error', 'message': 'Your credit balance is too low | | | | | |
+| WP-Q06A | error: APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'invalid_request_error', 'message': 'Your credit balance is too low | | | | | |
+| WP-Q06B | error: APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'invalid_request_error', 'message': 'Your credit balance is too low | | | | | |
+| WP-Q07 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q08A | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q08B | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q09 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q10 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q11 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q12 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q13 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q14 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q15 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q16 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-Q17 | error: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo | | | | | |
+| WP-X1 | kept from earlier attempt | | | | | |

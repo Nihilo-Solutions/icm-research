@@ -50,17 +50,26 @@ class Pricing:
         self.worst = max(self.table.values(), key=lambda p: p["output"])
 
     def cost(self, model: str, usage: dict) -> float:
+        """Estimate the cost of one response.
+
+        cache_creation_input_tokens is the authoritative total. The 5m/1h breakdown in the top-level
+        cache_creation object can cover only the first server-side iteration of a long tool loop
+        (seen in practice: breakdown 1,275 tokens against a total of 397,935), so it is used only to
+        split the total by TTL, never as the total."""
         p = self.table.get(model, self.worst)
-        cc = usage.get("cache_creation") or {}
-        w5 = cc.get("ephemeral_5m_input_tokens")
-        w1 = cc.get("ephemeral_1h_input_tokens")
-        if w5 is None and w1 is None:
-            total_w = usage.get("cache_creation_input_tokens") or 0
-            w5, w1 = (total_w, 0) if self.ttl == "5m" else (0, total_w)
+        total_w = usage.get("cache_creation_input_tokens") or 0
+        w1 = 0
+        iters = usage.get("iterations") or []
+        if iters:
+            w1 = sum(((it.get("cache_creation") or {}).get("ephemeral_1h_input_tokens") or 0) for it in iters)
+        elif self.ttl == "1h":
+            w1 = total_w
+        w1 = min(w1, total_w)
+        w5 = total_w - w1
         searches = (usage.get("server_tool_use") or {}).get("web_search_requests") or 0
         return ((usage.get("input_tokens") or 0) * p["input"]
                 + (usage.get("output_tokens") or 0) * p["output"]
-                + (w5 or 0) * p["cache_write_5m"] + (w1 or 0) * p["cache_write_1h"]
+                + w5 * p["cache_write_5m"] + w1 * p["cache_write_1h"]
                 + (usage.get("cache_read_input_tokens") or 0) * p["cache_read"]) / 1e6 \
             + searches * self.search_per_1k / 1000
 
@@ -166,6 +175,8 @@ class Claude:
     # ------------------------------------------------------------------
     async def _request(self, stage, name, model, system, messages, tools, effort, max_tokens,
                        output_format, allow_fallback) -> dict:
+        if getattr(self, "out_of_money", False):
+            raise SpendCapReached("Stopped: an earlier request hit the credit or spend limit.")
         async with self._lock:
             if self.spent >= self.budget:
                 raise BudgetExceeded(f"Run budget ${self.budget:.2f} reached (spent ${self.spent:.2f}). "
@@ -193,6 +204,9 @@ class Claude:
         try:
             msg, request_id = await self._stream(kwargs)
         except anthropic.BadRequestError as e:
+            if "credit balance is too low" in str(e):
+                self.out_of_money = True
+                raise SpendCapReached("Credit balance too low. Add credit in the Console (Plans & Billing).") from e
             # Some tool versions may not accept allowed_callers; retry once without it.
             if tools and "allowed_callers" in str(e):
                 kwargs["tools"] = [{k: v for k, v in t.items() if k != "allowed_callers"} for t in tools]
@@ -202,7 +216,13 @@ class Claude:
                 raise
         except anthropic.RateLimitError as e:
             if "enforced_spend_limit_reached" in str(getattr(e, "body", "")) or "spend" in str(e).lower():
+                self.out_of_money = True
                 raise SpendCapReached(str(e)) from e
+            raise
+        except anthropic.APIStatusError as e:
+            if "credit balance is too low" in str(e):
+                self.out_of_money = True
+                raise SpendCapReached("Credit balance too low. Add credit in the Console (Plans & Billing).") from e
             raise
 
         served = msg.get("model", model)

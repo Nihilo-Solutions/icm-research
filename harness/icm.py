@@ -29,7 +29,8 @@ from ledger import (CLAIMS_SCHEMA, EXTRACT_INSTRUCTIONS, VERDICTS_SCHEMA, Source
                     apply_verdict, deterministic_checks, finalize_report, render_ledger,
                     render_with_markers, select_for_verification, validate_claims, CLAIM_ID)
 from snapshots import as_search_result, fetch as fetch_snapshot  # noqa: E402
-from llm import BudgetExceeded, Claude, SpendCapReached, build_tools, last_json_block, system_blocks  # noqa: E402
+from llm import (BudgetExceeded, Claude, Pricing, SpendCapReached, TurnResult, _accumulate,  # noqa: E402
+                 build_tools, last_json_block, system_blocks)
 from workspace import STAGES, Run, load_config, stage_name  # noqa: E402
 
 
@@ -54,6 +55,38 @@ def require_text(res, what: str) -> None:
         raise SystemExit(f"{what} was declined: {res.refusal.get('category')}: {res.refusal.get('explanation')}")
     if not res.text.strip():
         raise SystemExit(f"{what} produced no text (stop_reason {res.stop_reason}). See events.jsonl.")
+
+
+def recover_turn(run: Run, stage: str, name: str) -> TurnResult | None:
+    """Rebuild a finished research turn from saved raw responses, so work that was paid for is
+    never paid for twice (for example when a later step in the same worker failed)."""
+    raw = run.raw_dir(stage)
+    groups: dict[str, list[Path]] = defaultdict(list)
+    for f in raw.glob(f"{name}.a*.response.json"):
+        m = re.fullmatch(rf"{re.escape(name)}\.a(\d+)\.(\d+)(\.r\d+)?\.response\.json", f.name)
+        if m:
+            groups[f"a{m.group(1)}{m.group(3) or ''}"].append(f)
+    best = None
+    for files in groups.values():
+        files.sort(key=lambda f: int(re.search(r"\.a\d+\.(\d+)", f.name).group(1)))
+        last = json.loads(files[-1].read_text())
+        if last.get("stop_reason") == "end_turn":
+            mtime = max(f.stat().st_mtime for f in files)
+            if best is None or mtime > best[0]:
+                best = (mtime, files)
+    if not best:
+        return None
+    res = TurnResult()
+    for f in best[1]:
+        msg = json.loads(f.read_text())
+        res.blocks.extend(msg["content"])
+        res.stop_reason = msg.get("stop_reason") or ""
+        res.models_served.append(msg.get("model", ""))
+        res.fallbacks += [b for b in msg["content"] if b.get("type") == "fallback"]
+        _accumulate(res.usage, msg.get("usage") or {})
+    run.log_event({"type": "recovered", "stage": stage, "name": name,
+                   "files": [f.name for f in best[1]], "note": "reused a paid, finished turn; no new API call"})
+    return res
 
 
 def header(**kv) -> str:
@@ -108,8 +141,11 @@ async def stage_02(run: Run, cfg: dict, claude: Claude, args) -> str:
             content = [{"type": "text", "text": user + note}] + blocks
         tools = build_tools(fm["tools"], cfg, p.get("max_searches", defaults.get("max_searches", 25)),
                             p.get("max_fetches", defaults.get("max_fetches", 20)))
-        res = await claude.turn(stage=stage, name=wp, model=fm["model"], system=system, user=content,
-                                tools=tools, effort=fm["effort"], max_tokens=fm["max_tokens"])
+        res = None if args.force else recover_turn(run, stage, wp)
+        if res is None:
+            res = await claude.turn(stage=stage, name=wp, model=p.get("model", fm["model"]), system=system,
+                                    user=content, tools=tools, effort=p.get("effort", fm["effort"]),
+                                    max_tokens=fm["max_tokens"])
         meta = dict(wp=wp, models=sorted(set(res.models_served)), fallbacks=len(res.fallbacks),
                     stop_reason=res.stop_reason, cost_usd=round(res.cost_usd, 3),
                     searches=res.usage.get("web_search_requests"), fetches=res.usage.get("web_fetch_requests"))
@@ -345,7 +381,7 @@ def main() -> None:
     p = sub.add_parser("approve"); p.add_argument("stage"); p.add_argument("--run")
     p.add_argument("--note", default=""); p.add_argument("--by", default=getpass.getuser())
     p.add_argument("--skip", action="store_true", help="approve a stage you chose not to run (for example 01)")
-    for name in ("status", "cost", "refresh-context"):
+    for name in ("status", "cost", "refresh-context", "recost"):
         p = sub.add_parser(name); p.add_argument("--run")
     args = ap.parse_args()
 
@@ -366,6 +402,20 @@ def main() -> None:
         s = stage_name(args.stage)
         run.approve(s, args.by, args.note, skip=args.skip)
         print(f"{'Skipped' if args.skip else 'Approved'} {s} for run {run.id} by {args.by}.")
+    elif args.cmd == "recost":
+        pricing = Pricing(load_config()["pricing"], load_config()["api"]["cache_ttl"])
+        true_total = 0.0
+        for f in sorted((run.dir / "raw").glob("*/*.response.json")):
+            msg = json.loads(f.read_text())
+            true_total += pricing.cost(msg.get("model", ""), msg.get("usage") or {})
+        logged = run.spent_usd()
+        delta = round(true_total - logged, 4)
+        if abs(delta) >= 0.01:
+            run.log_event({"type": "api_call", "stage": "correction", "name": "recost", "model_served": "n/a",
+                           "cost_usd": delta, "note": "recomputed from raw responses with the fixed pricing"})
+        print(f"Recomputed from saved responses: ${true_total:.2f} (log said ${logged:.2f}, correction ${delta:+.2f}).\n"
+              "Requests that failed mid-stream save no response, so their partial cost is not included; "
+              "the Console Usage page is the authoritative number.")
     elif args.cmd == "refresh-context":
         run.snapshot_context(reason="manual refresh")
         print(f"Re-froze L0 to L3 for run {run.id}. The change is recorded in manifest.json context_versions.")
