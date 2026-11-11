@@ -186,6 +186,26 @@ def test_verdicts_and_report_finalization():
         assert "S1. MS page. https://learn.microsoft.com/x (accessed 2026-11-10)" in final
 
 
+def test_snapshot_search_results_are_cited_to_the_api_url():
+    from snapshots import as_search_result, snapshot_url
+    url = snapshot_url({"azure_retail_filter": "serviceName eq 'Key Vault' and armRegionName eq 'eastus'"})
+    assert url.startswith("https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Key%20Vault'")
+    snap = {"title": "Key Vault", "url": url, "retrieved_at": "2026-11-11T08:00:00+00:00", "truncated": False,
+            "items": [{"serviceName": "Key Vault", "meterName": "Operations", "unitPrice": 0.03, "unitOfMeasure": "10K"}]}
+    sr = as_search_result(snap)
+    assert sr["type"] == "search_result" and sr["citations"] == {"enabled": True} and len(sr["content"]) == 2
+    blocks = [{"type": "text", "text": "[confirmed Q6] Key Vault operations cost $0.03 per 10K.",
+               "citations": [{"type": "search_result_location", "source": url, "title": "Key Vault",
+                              "cited_text": "Key Vault | | | Operations | 0.03 | 10K", "search_result_index": 0,
+                              "start_block_index": 1, "end_block_index": 2}]}]
+    with tempfile.TemporaryDirectory() as td:
+        reg = SourceRegistry(Path(td) / "s.json")
+        reg.add(url, "Key Vault", "2026-11-11", snapshot="snapshots/abc.json", seen_in="WP-X1")
+        md, quotes, _ = render_with_markers(blocks, reg, "2026-11-11", "WP-X1")
+        assert md.endswith("{S1}") and reg.by_id()["S1"]["snapshot"] == "snapshots/abc.json"
+        assert quotes["S1"] == ["Key Vault | | | Operations | 0.03 | 10K"]
+
+
 def test_strip_dashes():
     assert strip_dashes("a \u2014 b, 1\u20132")[0] == "a, b, 1 to 2"
 

@@ -28,6 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ledger import (CLAIMS_SCHEMA, EXTRACT_INSTRUCTIONS, VERDICTS_SCHEMA, SourceRegistry,  # noqa: E402
                     apply_verdict, deterministic_checks, finalize_report, render_ledger,
                     render_with_markers, select_for_verification, validate_claims, CLAIM_ID)
+from snapshots import as_search_result, fetch as fetch_snapshot  # noqa: E402
 from llm import BudgetExceeded, Claude, SpendCapReached, build_tools, last_json_block, system_blocks  # noqa: E402
 from workspace import STAGES, Run, load_config, stage_name  # noqa: E402
 
@@ -93,9 +94,21 @@ async def stage_02(run: Run, cfg: dict, claude: Claude, args) -> str:
         urls = "\n".join(p.get("start_urls", []))
         user = (pre + "<work_package>\n" + yaml.safe_dump(task, sort_keys=False, allow_unicode=True)
                 + "</work_package>\n" + (f"\nStart URLs you may fetch directly:\n{urls}\n" if urls else ""))
+        content = user
+        if p.get("data_snapshots"):
+            blocks = []
+            for spec in p["data_snapshots"]:
+                snap = fetch_snapshot(spec, run.dir / "snapshots")
+                reg.add(snap["url"], snap["title"], run.run_date, retrieved_at=snap["retrieved_at"],
+                        snapshot=f"snapshots/{snap['file']}", seen_in=wp)
+                blocks.append(as_search_result(snap))
+            note = ("\nOfficial data snapshots are attached below as search results. The harness fetched "
+                    "them from the official API. They are primary sources: cite them for the figures they "
+                    "contain instead of secondary pages.\n")
+            content = [{"type": "text", "text": user + note}] + blocks
         tools = build_tools(fm["tools"], cfg, p.get("max_searches", defaults.get("max_searches", 25)),
                             p.get("max_fetches", defaults.get("max_fetches", 20)))
-        res = await claude.turn(stage=stage, name=wp, model=fm["model"], system=system, user=user,
+        res = await claude.turn(stage=stage, name=wp, model=fm["model"], system=system, user=content,
                                 tools=tools, effort=fm["effort"], max_tokens=fm["max_tokens"])
         meta = dict(wp=wp, models=sorted(set(res.models_served)), fallbacks=len(res.fallbacks),
                     stop_reason=res.stop_reason, cost_usd=round(res.cost_usd, 3),
@@ -175,6 +188,11 @@ async def stage_03(run: Run, cfg: dict, claude: Claude, args) -> str:
             lines.append(f"- {c['id']} | status {c['status']} | {c['statement']}\n  Worker's quoted snippet(s): {q}")
         user = (pre + f"<task>\nSource URL: {src['url']}\nSource title: {src['title']}\n\n"
                 "Claims citing this source:\n" + "\n".join(lines) + "\n</task>")
+        if src.get("snapshot"):
+            snap = json.loads((run.dir / src["snapshot"]).read_text())
+            user = [{"type": "text", "text": user + "\nThis source is an official API. The harness stored the "
+                     "exact response it gave the researcher; it is attached below as a search result. Verify "
+                     "the claims against it and do not fetch the URL.\n"}, as_search_result(snap)]
         res = await claude.turn(stage=stage, name=f"v{n:03d}", model=fm["model"], system=system, user=user,
                                 tools=build_tools(fm["tools"], cfg, max_searches=3, max_fetches=4),
                                 effort=fm["effort"], max_tokens=fm["max_tokens"])

@@ -1,0 +1,1674 @@
+{
+ "meta": {
+  "wp": "WP-Q05A",
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "fallbacks": 0,
+  "stop_reason": "end_turn",
+  "cost_usd": 1.782,
+  "searches": 12,
+  "fetches": 20
+ },
+ "claims": [
+  {
+   "id": "C-WPQ05A-001",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Building client-facing systems on the API falls inside the license grant in section A.1 of the Commercial Terms (effective Jun 17, 2025), which extends to products a customer offers its own customers and end users.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-002",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Resale of the Services is barred by section D.4 unless Anthropic expressly approves it.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-003",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "The Usage Policy (page shows \"Effective Nov 12, 2026\", one day after this run) lists unauthorized resale or proxying of Claude access among its platform-abuse prohibitions, and names routing through consumer subscriptions as an example.",
+   "source_ids": [
+    "S28"
+   ],
+   "quotes": {
+    "S28": [
+     "*\n\n### Do Not Engage in Fraudulent, Abusive, or Predatory Practices\n\nThis includes using our products or services to:\n\n- Facilitate the production, acquisition, or distribution of counterfeit or illicitly acquired goods\n- Promote or facilitate the generation or distribution of spam\n- Undertake, facilitate, or generate content for fraudulent activities, schemes, scams, extortion, phishing (including websites or domains that mimic legitimate webpages), social engineering, or malware\n- Create, buy, or sell falsified documents including fake IDs, licenses, currency, government documents, or financial or employment records, or misrepresent professional credentials\n- Develop, promote, or otherwise facilitate the sale or distribution of fraudulent or deceptive products\n- Engage in deceptive or abusive practices that exploit individuals, including based on age, disability, or a specific social or economic situation, such as pyramid schemes, predatory lending, or abusive debt collection\n- Deploy, develop, or support a product or service that uses subliminal, manipulative, or deceptive techniques to distort behavior by impairing decision-making\n- Engage in actions or behaviors that circumvent the guardrails or terms of other platforms or services\n- Plagiarize or submit AI-assisted work without proper permission or attribution\n\n### Do Not Abuse Our Platform\n\nThis includes using our products or services to:\n\n- Coordinate malicious activity across multiple accounts, or create multiple accounts, to avoid detection, circumvent product guardrails, or generate identical or similar inputs that otherwise violate our Usage Policy\n- Utilize automation in account creation or to engage in spammy behavior\n- Circumvent a ban through the use of a different account, such as the creation of a new account, use of an existing account, or providing access to a person or entity that was previously banned\n- Access, facilitate, or provide others (including end users) with access to our products or services in violation of our [Supported Regions Policy](https://www.anthropic.com/supported-countries)\n- Intentionally bypass or interfere with capabilities, restrictions, or guardrails established within our products, including by circumvention of the account sign-up or log-in process or by instructing the model to produce harmful outputs (e.g., jailbreaking or prompt injection), without prior authorization from Anthropic\n- Use stolen, fraudulent, or unauthorized payment methods, or otherwise evade payment for our services\n- Use outputs to train an AI model (e.g., \u201cmodel scraping\u201d or \u201cmodel distillation\u201d) without prior authorization from Anthropic\n- Resell, proxy, or otherwise provide access to Claude through unauthorized means, including services that route requests through consumer subscriptions or misrepresent the product or client being used\n\n### Do Not Generate Sexually Explicit Content\n\nThis includes using our products or services to:\n\n- Depict or request sexual intercourse or sex acts\n- Generate content related to sexual fetishes or fantasies\n- Facilitate, promote, or depict incest or bestiality\n- Engage in erotic chats\n\n## High-risk Use Case Requirements\n\nCertain uses of our products and services can impact an individual\u2019s health, legal rights, finances, livelihoods, or access to housing, education, or essential services. ",
+     "When our products are used for these high-risk use cases, we require that a qualified person remain accountable for what is delivered or decided, and that the impacted individual knows AI was involved in the advice or decision. ",
+     "- Internal drafting, research, summarization, or analysis that is not the ultimate High-risk AI Recommendation delivered.\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-004",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "A Nihilo-hosted ICM system with real workflow logic on top of the API reads as \"powering a product\" (allowed). Passing through raw API access or seats at a markup reads as \"resale\" (needs approval). The terms do not define the line, so get it confirmed in writing before pricing a managed service on token markup.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-005",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Account-level responsibility stays with the contracting customer under D.5, so in a Nihilo-hosted model every client user's activity is Nihilo's responsibility toward Anthropic.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-006",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "An accuracy warning to end users is a contractual duty under D.3, which Nihilo's client contract and UI would need to carry.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-007",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Indemnity runs from the customer to Anthropic for third-party claims tied to user inputs or policy violations (K.2).",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-008",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Twelve months of fees is the ceiling on each side's liability under L.3.a, with consequential damages excluded.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-009",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "In the Nihilo-hosted model, Nihilo sits between an uncapped client claim and a vendor whose liability is capped at Nihilo's own 12-month spend. Nihilo's client contract needs its own cap and insurance sized to that gap.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-010",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Thirty days' notice is all Anthropic owes before terminating for convenience (I.2.a), and suspension is possible when a user breaches the policies.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-011",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "High-risk use cases in the Usage Policy (legal, finance, credit, insurance, employment, healthcare access and others) carry a human-review and AI-disclosure requirement.",
+   "source_ids": [
+    "S28"
+   ],
+   "quotes": {
+    "S28": [
+     "*\n\n### Do Not Engage in Fraudulent, Abusive, or Predatory Practices\n\nThis includes using our products or services to:\n\n- Facilitate the production, acquisition, or distribution of counterfeit or illicitly acquired goods\n- Promote or facilitate the generation or distribution of spam\n- Undertake, facilitate, or generate content for fraudulent activities, schemes, scams, extortion, phishing (including websites or domains that mimic legitimate webpages), social engineering, or malware\n- Create, buy, or sell falsified documents including fake IDs, licenses, currency, government documents, or financial or employment records, or misrepresent professional credentials\n- Develop, promote, or otherwise facilitate the sale or distribution of fraudulent or deceptive products\n- Engage in deceptive or abusive practices that exploit individuals, including based on age, disability, or a specific social or economic situation, such as pyramid schemes, predatory lending, or abusive debt collection\n- Deploy, develop, or support a product or service that uses subliminal, manipulative, or deceptive techniques to distort behavior by impairing decision-making\n- Engage in actions or behaviors that circumvent the guardrails or terms of other platforms or services\n- Plagiarize or submit AI-assisted work without proper permission or attribution\n\n### Do Not Abuse Our Platform\n\nThis includes using our products or services to:\n\n- Coordinate malicious activity across multiple accounts, or create multiple accounts, to avoid detection, circumvent product guardrails, or generate identical or similar inputs that otherwise violate our Usage Policy\n- Utilize automation in account creation or to engage in spammy behavior\n- Circumvent a ban through the use of a different account, such as the creation of a new account, use of an existing account, or providing access to a person or entity that was previously banned\n- Access, facilitate, or provide others (including end users) with access to our products or services in violation of our [Supported Regions Policy](https://www.anthropic.com/supported-countries)\n- Intentionally bypass or interfere with capabilities, restrictions, or guardrails established within our products, including by circumvention of the account sign-up or log-in process or by instructing the model to produce harmful outputs (e.g., jailbreaking or prompt injection), without prior authorization from Anthropic\n- Use stolen, fraudulent, or unauthorized payment methods, or otherwise evade payment for our services\n- Use outputs to train an AI model (e.g., \u201cmodel scraping\u201d or \u201cmodel distillation\u201d) without prior authorization from Anthropic\n- Resell, proxy, or otherwise provide access to Claude through unauthorized means, including services that route requests through consumer subscriptions or misrepresent the product or client being used\n\n### Do Not Generate Sexually Explicit Content\n\nThis includes using our products or services to:\n\n- Depict or request sexual intercourse or sex acts\n- Generate content related to sexual fetishes or fantasies\n- Facilitate, promote, or depict incest or bestiality\n- Engage in erotic chats\n\n## High-risk Use Case Requirements\n\nCertain uses of our products and services can impact an individual\u2019s health, legal rights, finances, livelihoods, or access to housing, education, or essential services. ",
+     "When our products are used for these high-risk use cases, we require that a qualified person remain accountable for what is delivered or decided, and that the impacted individual knows AI was involved in the advice or decision. ",
+     "- Internal drafting, research, summarization, or analysis that is not the ultimate High-risk AI Recommendation delivered.\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-012",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Internal drafting, research, summarization and general business operations sit in the listed exclusions from those high-risk requirements.",
+   "source_ids": [
+    "S28"
+   ],
+   "quotes": {
+    "S28": [
+     "*\n\n### Do Not Engage in Fraudulent, Abusive, or Predatory Practices\n\nThis includes using our products or services to:\n\n- Facilitate the production, acquisition, or distribution of counterfeit or illicitly acquired goods\n- Promote or facilitate the generation or distribution of spam\n- Undertake, facilitate, or generate content for fraudulent activities, schemes, scams, extortion, phishing (including websites or domains that mimic legitimate webpages), social engineering, or malware\n- Create, buy, or sell falsified documents including fake IDs, licenses, currency, government documents, or financial or employment records, or misrepresent professional credentials\n- Develop, promote, or otherwise facilitate the sale or distribution of fraudulent or deceptive products\n- Engage in deceptive or abusive practices that exploit individuals, including based on age, disability, or a specific social or economic situation, such as pyramid schemes, predatory lending, or abusive debt collection\n- Deploy, develop, or support a product or service that uses subliminal, manipulative, or deceptive techniques to distort behavior by impairing decision-making\n- Engage in actions or behaviors that circumvent the guardrails or terms of other platforms or services\n- Plagiarize or submit AI-assisted work without proper permission or attribution\n\n### Do Not Abuse Our Platform\n\nThis includes using our products or services to:\n\n- Coordinate malicious activity across multiple accounts, or create multiple accounts, to avoid detection, circumvent product guardrails, or generate identical or similar inputs that otherwise violate our Usage Policy\n- Utilize automation in account creation or to engage in spammy behavior\n- Circumvent a ban through the use of a different account, such as the creation of a new account, use of an existing account, or providing access to a person or entity that was previously banned\n- Access, facilitate, or provide others (including end users) with access to our products or services in violation of our [Supported Regions Policy](https://www.anthropic.com/supported-countries)\n- Intentionally bypass or interfere with capabilities, restrictions, or guardrails established within our products, including by circumvention of the account sign-up or log-in process or by instructing the model to produce harmful outputs (e.g., jailbreaking or prompt injection), without prior authorization from Anthropic\n- Use stolen, fraudulent, or unauthorized payment methods, or otherwise evade payment for our services\n- Use outputs to train an AI model (e.g., \u201cmodel scraping\u201d or \u201cmodel distillation\u201d) without prior authorization from Anthropic\n- Resell, proxy, or otherwise provide access to Claude through unauthorized means, including services that route requests through consumer subscriptions or misrepresent the product or client being used\n\n### Do Not Generate Sexually Explicit Content\n\nThis includes using our products or services to:\n\n- Depict or request sexual intercourse or sex acts\n- Generate content related to sexual fetishes or fantasies\n- Facilitate, promote, or depict incest or bestiality\n- Engage in erotic chats\n\n## High-risk Use Case Requirements\n\nCertain uses of our products and services can impact an individual\u2019s health, legal rights, finances, livelihoods, or access to housing, education, or essential services. ",
+     "When our products are used for these high-risk use cases, we require that a qualified person remain accountable for what is delivered or decided, and that the impacted individual knows AI was involved in the advice or decision. ",
+     "- Internal drafting, research, summarization, or analysis that is not the ultimate High-risk AI Recommendation delivered.\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-013",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Responsibility for what an agent does through tools and connected systems is placed on whoever builds or deploys it.",
+   "source_ids": [
+    "S28"
+   ],
+   "quotes": {
+    "S28": [
+     "*\n\n### Do Not Engage in Fraudulent, Abusive, or Predatory Practices\n\nThis includes using our products or services to:\n\n- Facilitate the production, acquisition, or distribution of counterfeit or illicitly acquired goods\n- Promote or facilitate the generation or distribution of spam\n- Undertake, facilitate, or generate content for fraudulent activities, schemes, scams, extortion, phishing (including websites or domains that mimic legitimate webpages), social engineering, or malware\n- Create, buy, or sell falsified documents including fake IDs, licenses, currency, government documents, or financial or employment records, or misrepresent professional credentials\n- Develop, promote, or otherwise facilitate the sale or distribution of fraudulent or deceptive products\n- Engage in deceptive or abusive practices that exploit individuals, including based on age, disability, or a specific social or economic situation, such as pyramid schemes, predatory lending, or abusive debt collection\n- Deploy, develop, or support a product or service that uses subliminal, manipulative, or deceptive techniques to distort behavior by impairing decision-making\n- Engage in actions or behaviors that circumvent the guardrails or terms of other platforms or services\n- Plagiarize or submit AI-assisted work without proper permission or attribution\n\n### Do Not Abuse Our Platform\n\nThis includes using our products or services to:\n\n- Coordinate malicious activity across multiple accounts, or create multiple accounts, to avoid detection, circumvent product guardrails, or generate identical or similar inputs that otherwise violate our Usage Policy\n- Utilize automation in account creation or to engage in spammy behavior\n- Circumvent a ban through the use of a different account, such as the creation of a new account, use of an existing account, or providing access to a person or entity that was previously banned\n- Access, facilitate, or provide others (including end users) with access to our products or services in violation of our [Supported Regions Policy](https://www.anthropic.com/supported-countries)\n- Intentionally bypass or interfere with capabilities, restrictions, or guardrails established within our products, including by circumvention of the account sign-up or log-in process or by instructing the model to produce harmful outputs (e.g., jailbreaking or prompt injection), without prior authorization from Anthropic\n- Use stolen, fraudulent, or unauthorized payment methods, or otherwise evade payment for our services\n- Use outputs to train an AI model (e.g., \u201cmodel scraping\u201d or \u201cmodel distillation\u201d) without prior authorization from Anthropic\n- Resell, proxy, or otherwise provide access to Claude through unauthorized means, including services that route requests through consumer subscriptions or misrepresent the product or client being used\n\n### Do Not Generate Sexually Explicit Content\n\nThis includes using our products or services to:\n\n- Depict or request sexual intercourse or sex acts\n- Generate content related to sexual fetishes or fantasies\n- Facilitate, promote, or depict incest or bestiality\n- Engage in erotic chats\n\n## High-risk Use Case Requirements\n\nCertain uses of our products and services can impact an individual\u2019s health, legal rights, finances, livelihoods, or access to housing, education, or essential services. ",
+     "When our products are used for these high-risk use cases, we require that a qualified person remain accountable for what is delivered or decided, and that the impacted individual knows AI was involved in the advice or decision. ",
+     "- Internal drafting, research, summarization, or analysis that is not the ultimate High-risk AI Recommendation delivered.\n"
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-014",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Whether Anthropic runs a reseller or services-partner program open to a two-to-three person firm, and on what terms. The Usage Policy mentions \"authorized resellers\" and Anthropic's site links to \"Service partners\" and \"Powered by Claude\" pages, but I did not fetch them.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "open https://claude.com/partners/services and https://claude.com/partners/powered-by-claude, then ask Anthropic sales whether a managed ICM service needs D.4 approval.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-015",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "No separate signature is needed for Anthropic's DPA (effective Feb 24, 2025), because the Commercial Terms pull it in by reference.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-016",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Roles under the DPA are fixed: the contracting customer is controller and Anthropic is its processor.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-017",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "A processor-to-processor transfer module is already built into the DPA, which fits the case where Nihilo is itself a processor for its client.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-018",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Sub-processor changes at Anthropic work by general authorization with a 15-day objection window.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-019",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Breach notice from Anthropic has a 48-hour outer limit.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-020",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Deletion or return of customer data follows within 30 days of the agreement ending, with carve-outs for legal holds, disputes and combating harmful use.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-021",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Special categories of personal data are listed as \"None\" in the DPA's description of processing, so health or similar data is outside the default scope.",
+   "source_ids": [
+    "S23"
+   ],
+   "quotes": {
+    "S23": [
+     "With respect to Customer Personal Data, Customer is the controller and Anthropic is Customer\u2019s processor. ",
+     "The parties agree that, to the extent required by Applicable Data Protection Laws, the terms of the SCCs Module Two (controller to processor) and/or Module Three (processor to processor), as completed as described in Schedule 3 of this DPA, are hereby incorporated by reference and will be deemed to have been executed by the parties.\n\n",
+     "In the event that Anthropic wishes to appoint an additional Subprocessor: (a) Anthropic will provide Customer reasonable notice of the new Subprocessor prior to giving the Subprocessor access to Customer Personal Data; and (b) Customer may, on the basis of reasonable data privacy or data security concerns, object to Anthropic\u2019s use of such Subprocessor by providing Anthropic with written notice of the objection within fifteen (15) days of the date of such notice, or Customer is deemed to consent to the new Subprocessor. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-022",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Anthropic's current sub-processor list. The DPA points to https://www.anthropic.com/subprocessors, but my fetch returned only a Trust Center shell with no list.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "open that URL in a browser and save a dated copy for Nihilo's own sub-processor schedule.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-023",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Default API retention is up to 30 days (privacy article dated July 1, 2026), with exceptions for features the customer controls, zero data retention agreements, policy enforcement and law.",
+   "source_ids": [
+    "S38"
+   ],
+   "quotes": {
+    "S38": [
+     "*\n\n## Standard Retention Timeframe\n\nFor Anthropic API users, we automatically delete inputs and outputs on our backend within 30 days of receipt or generation, except:\n\n- When you use a service with longer retention under your control (e.g. ",
+     "## Usage Policy Violations\n\nWe retain inputs and outputs for up to 2 years and trust and safety classification scores for up to 7 years if your chat is flagged by our automated trust and safety systems as violating our [Usage Policy](https://www.anthropic.com/legal/aup).\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-024",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Flagged content is kept far longer than the default, whatever arrangement is in place.",
+   "source_ids": [
+    "S38"
+   ],
+   "quotes": {
+    "S38": [
+     "*\n\n## Standard Retention Timeframe\n\nFor Anthropic API users, we automatically delete inputs and outputs on our backend within 30 days of receipt or generation, except:\n\n- When you use a service with longer retention under your control (e.g. ",
+     "## Usage Policy Violations\n\nWe retain inputs and outputs for up to 2 years and trust and safety classification scores for up to 7 years if your chat is flagged by our automated trust and safety systems as violating our [Usage Policy](https://www.anthropic.com/legal/aup).\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-025",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Zero data retention (ZDR) is an approval-based arrangement requested through sales and switched on one organization at a time.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-026",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "ZDR eligibility criteria for a small firm. No Anthropic page I retrieved publishes them.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "ask Anthropic sales whether a low-volume Console organization qualifies, and get the answer in writing.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-027",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "ZDR scope is limited to the Messages and Token Counting APIs and Claude Code used with commercial API keys. Console use, Claude Managed Agents, and the Team and Enterprise product interfaces fall outside it.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-028",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Several features an ICM runtime might lean on are marked ineligible for both ZDR and HIPAA readiness in Anthropic's table: Agent Skills, Batch processing, the Files API, the MCP connector, the code execution tool and Claude Managed Agents.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-029",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Client-side tools (bash, text editor, memory) are eligible under both arrangements because they run in the customer's own environment.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-030",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "For regulated clients, the ICM runtime should use the plain Messages API with tools, files and MCP calls executed in the Azure environment (Nihilo's or the client's), not Anthropic-hosted Skills, Files, MCP connector or Managed Agents. That keeps the workload inside what ZDR and the BAA can cover.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-031",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "The newest \"Covered Models\" (the Fable and Mythos lines) force 30-day retention and override any ZDR commitment, per the Service Specific Terms (effective Aug 31, 2026).",
+   "source_ids": [
+    "S31"
+   ],
+   "quotes": {
+    "S31": [
+     "Customer agrees that Anthropic may retain and perform safety reviews on Inputs, Outputs, and other data regarding Customer\u2019s use of the Covered Models. For clarity, this supersedes any modified retention commitments (e.g., ZDR) provided by Anthropic that may otherwise apply to Customer\u2019s use of the Services.\n",
+     "Anthropic\u2019s liability related to Beta Services is limited to the lesser of $1,000 and Fees paid by Customer for the Services in the previous 12 months.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-032",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Beta features come without indemnity and with a tiny liability cap, which matters if a client build depends on one.",
+   "source_ids": [
+    "S31"
+   ],
+   "quotes": {
+    "S31": [
+     "Customer agrees that Anthropic may retain and perform safety reviews on Inputs, Outputs, and other data regarding Customer\u2019s use of the Covered Models. For clarity, this supersedes any modified retention commitments (e.g., ZDR) provided by Anthropic that may otherwise apply to Customer\u2019s use of the Services.\n",
+     "Anthropic\u2019s liability related to Beta Services is limited to the lesser of $1,000 and Fees paid by Customer for the Services in the previous 12 months.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-033",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "BAA coverage exists for three surfaces only: the first-party API, Claude in Microsoft Foundry, and Enterprise plans (privacy article \"updated over a week ago\").",
+   "source_ids": [
+    "S24"
+   ],
+   "quotes": {
+    "S24": [
+     "*\n\nAnthropic provides a BAA covering our HIPAA-ready services, such as use of our first-party API, Claude in Microsoft Foundry, or Enterprise plans. ",
+     "For clarity, the BAA only covers the single organization that accepted it, and excludes features such as Claude Console, Cowork in the cloud, or features currently in beta such as Claude in Office, Claude Design, Claude Slides, and Claude Docs. ",
+     "**Important:** To use the 1P API with PHI, your organization\u2019s Primary Owner will need to sign a BAA and then reach out to your Anthropic contact or our **[Sales team](https://claude.com/contact-sales)** to get this turned on.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-034",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Nihilo's current Claude Team plan is not on that list, so no PHI should go through it. A secondary source says Team cannot enable HIPAA at all, but I did not find that sentence on a primary page.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-035",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "One BAA covers one organization, and Console, cloud Cowork and beta features are excluded.",
+   "source_ids": [
+    "S24"
+   ],
+   "quotes": {
+    "S24": [
+     "*\n\nAnthropic provides a BAA covering our HIPAA-ready services, such as use of our first-party API, Claude in Microsoft Foundry, or Enterprise plans. ",
+     "For clarity, the BAA only covers the single organization that accepted it, and excludes features such as Claude Console, Cowork in the cloud, or features currently in beta such as Claude in Office, Claude Design, Claude Slides, and Claude Docs. ",
+     "**Important:** To use the 1P API with PHI, your organization\u2019s Primary Owner will need to sign a BAA and then reach out to your Anthropic contact or our **[Sales team](https://claude.com/contact-sales)** to get this turned on.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-036",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Two enablement paths exist for the API: self-serve in the Console with the standard BAA, or through sales for a negotiated one.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-037",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Sources differ slightly here: the privacy-center article says the Primary Owner signs the BAA and then contacts Anthropic to switch PHI processing on. The developer docs are more detailed and describe both paths, so I treat them as the fuller account. Whether self-serve appears for a given organization is still to be tested.",
+   "source_ids": [
+    "S24"
+   ],
+   "quotes": {
+    "S24": [
+     "*\n\nAnthropic provides a BAA covering our HIPAA-ready services, such as use of our first-party API, Claude in Microsoft Foundry, or Enterprise plans. ",
+     "For clarity, the BAA only covers the single organization that accepted it, and excludes features such as Claude Console, Cowork in the cloud, or features currently in beta such as Claude in Office, Claude Design, Claude Slides, and Claude Docs. ",
+     "**Important:** To use the 1P API with PHI, your organization\u2019s Primary Owner will need to sign a BAA and then reach out to your Anthropic contact or our **[Sales team](https://claude.com/contact-sales)** to get this turned on.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-038",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "HIPAA enablement on an API organization is irreversible and organization-wide, so PHI and non-PHI work need separate organizations.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-039",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Under the BAA on a HIPAA-ready API organization, the Batch API, Files API, Skills API, code execution and web fetch are blocked, and external MCP data flows are available but uncovered.",
+   "source_ids": [
+    "S24"
+   ],
+   "quotes": {
+    "S24": [
+     "*\n\nAnthropic provides a BAA covering our HIPAA-ready services, such as use of our first-party API, Claude in Microsoft Foundry, or Enterprise plans. ",
+     "For clarity, the BAA only covers the single organization that accepted it, and excludes features such as Claude Console, Cowork in the cloud, or features currently in beta such as Claude in Office, Claude Design, Claude Slides, and Claude Docs. ",
+     "**Important:** To use the 1P API with PHI, your organization\u2019s Primary Owner will need to sign a BAA and then reach out to your Anthropic contact or our **[Sales team](https://claude.com/contact-sales)** to get this turned on.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-040",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Claude through Microsoft Foundry (either hosting option) qualifies when two things are in place: a BAA with Anthropic, and a HIPAA configuration on the Azure subscription requested through Anthropic's account team.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-041",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Some secondary write-ups from mid-2026 say HIPAA readiness is not available on Microsoft Foundry. Anthropic's current primary pages (above) list Foundry as eligible. The primary pages are more recent and authoritative.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "Find and cite a primary source for this statement.",
+   "notes": "no API citation attached; downgraded to unverified"
+  },
+  {
+   "id": "C-WPQ05A-042",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Bedrock and Google Cloud's Agent Platform are outside Anthropic's HIPAA readiness (the cloud provider's own compliance terms apply), and Claude Platform on AWS has no HIPAA readiness at all.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-043",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Claude Code routed through Foundry, Bedrock or Google Cloud is available but not BAA-covered.",
+   "source_ids": [
+    "S24"
+   ],
+   "quotes": {
+    "S24": [
+     "*\n\nAnthropic provides a BAA covering our HIPAA-ready services, such as use of our first-party API, Claude in Microsoft Foundry, or Enterprise plans. ",
+     "For clarity, the BAA only covers the single organization that accepted it, and excludes features such as Claude Console, Cowork in the cloud, or features currently in beta such as Claude in Office, Claude Design, Claude Slides, and Claude Docs. ",
+     "**Important:** To use the 1P API with PHI, your organization\u2019s Primary Owner will need to sign a BAA and then reach out to your Anthropic contact or our **[Sales team](https://claude.com/contact-sales)** to get this turned on.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-044",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Processor identity depends on the route: Anthropic is the processor on its own API, Claude Platform on AWS, the Anthropic-managed Google Cloud offering and Microsoft Foundry, while on Bedrock and the Google-managed offering the cloud provider holds that role.",
+   "source_ids": [
+    "S27"
+   ],
+   "quotes": {
+    "S27": [
+     "To request ZDR for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). ZDR is enabled per organization; each new organization requires ZDR to be enabled separately by your account team, and enablement does not automatically extend to other organizations under the same account.\n\n",
+     "### What ZDR does not cover \ue09a\n\n- **Claude Console:** Any usage in the Claude Console, including playground.\n- **Claude Managed Agents:** Claude Managed Agents is a stateful resource; session transcripts persist until you delete them.\n",
+     "- **Claude Teams and Claude Enterprise product interfaces:** These interfaces are not ZDR-eligible. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-045",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "In Foundry, Microsoft's page (last updated 2026-06-29) describes Claude as a third-party Marketplace offering in which Anthropic is seller, operator and independent processor under Anthropic's own terms.",
+   "source_ids": [
+    "S39"
+   ],
+   "quotes": {
+    "S39": [
+     "## Both Hosting Options\n\nFor both hosting options, Anthropic is the seller and operator of Claude models in Microsoft Foundry and acts as an independent data processor for prompts and outputs associated with Claude models. Anthropic's terms of use govern your use of the Claude models. ",
+     "Microsoft processes data for these services under the Microsoft Products and Services Data Protection Addendum and applicable Marketplace terms.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-046",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Microsoft's own DPA still applies in Foundry, but only to the surrounding Foundry experience, infrastructure and billing data.",
+   "source_ids": [
+    "S39"
+   ],
+   "quotes": {
+    "S39": [
+     "## Both Hosting Options\n\nFor both hosting options, Anthropic is the seller and operator of Claude models in Microsoft Foundry and acts as an independent data processor for prompts and outputs associated with Claude models. Anthropic's terms of use govern your use of the Claude models. ",
+     "Microsoft processes data for these services under the Microsoft Products and Services Data Protection Addendum and applicable Marketplace terms.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-047",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Whoever owns the Azure billing account accepts Anthropic's Marketplace offer, so in a client-tenant deployment the client, not Nihilo, becomes Anthropic's contracting party.",
+   "source_ids": [
+    "S33"
+   ],
+   "quotes": {
+    "S33": [
+     "Subscribe to the **Claude Platform on Foundry** offer through [Azure Marketplace](https://marketplace.microsoft.com/) or the Microsoft Foundry portal model catalog.\n",
+     "Accept the offer on your Azure billing account.\n",
+     "### Subscription type restrictions\n\nThe following subscription types aren't supported for Claude models:\n\n- Free trial subscriptions\n- Student subscriptions\n- Credit-based subscriptions\n- Enterprise accounts in South Korea\n- Cloud Solution Provider (CSP) subscriptions\n\n### Quota increase\n\nTo request a quota increase beyond your default rate limits, submit the [quota increase request form](https://aka.ms/oai/stuquotarequest).\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-048",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Cloud Solution Provider subscriptions cannot deploy Claude models in Foundry (page last updated 2026-09-22).",
+   "source_ids": [
+    "S33"
+   ],
+   "quotes": {
+    "S33": [
+     "Subscribe to the **Claude Platform on Foundry** offer through [Azure Marketplace](https://marketplace.microsoft.com/) or the Microsoft Foundry portal model catalog.\n",
+     "Accept the offer on your Azure billing account.\n",
+     "### Subscription type restrictions\n\nThe following subscription types aren't supported for Claude models:\n\n- Free trial subscriptions\n- Student subscriptions\n- Credit-based subscriptions\n- Enterprise accounts in South Korea\n- Cloud Solution Provider (CSP) subscriptions\n\n### Quota increase\n\nTo request a quota increase beyond your default rate limits, submit the [quota increase request form](https://aka.ms/oai/stuquotarequest).\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-049",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "This matters for Nihilo's channel: small clients who buy Azure through an MSP on CSP cannot host Claude in their own tenant via Foundry. They would need a direct Microsoft Customer Agreement subscription, or the Anthropic API directly.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-050",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Residency differs by Foundry hosting option: the Azure-hosted option keeps data at rest in the chosen Azure geography, while the Anthropic-hosted option may process outside Azure and outside the selected region. Regions and model lists belong to WP-Q06A and WP-Q06B.",
+   "source_ids": [
+    "S33"
+   ],
+   "quotes": {
+    "S33": [
+     "Subscribe to the **Claude Platform on Foundry** offer through [Azure Marketplace](https://marketplace.microsoft.com/) or the Microsoft Foundry portal model catalog.\n",
+     "Accept the offer on your Azure billing account.\n",
+     "### Subscription type restrictions\n\nThe following subscription types aren't supported for Claude models:\n\n- Free trial subscriptions\n- Student subscriptions\n- Credit-based subscriptions\n- Enterprise accounts in South Korea\n- Cloud Solution Provider (CSP) subscriptions\n\n### Quota increase\n\nTo request a quota increase beyond your default rate limits, submit the [quota increase request form](https://aka.ms/oai/stuquotarequest).\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-051",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "The two vendors word the Azure-hosted boundary differently. Microsoft says prompts and outputs never leave Azure. Anthropic's page adds an exception, and is the more precise of the two.",
+   "source_ids": [
+    "S26"
+   ],
+   "quotes": {
+    "S26": [
+     "Only usage metadata and content flagged by Anthropic\u2019s safety systems egress to Anthropic. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-052",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Inside Microsoft 365 Copilot and Copilot Studio the contract picture is different: there Anthropic acts as Microsoft's sub-processor under Microsoft's Product Terms and DPA, except for models labeled as requiring data retention (page last updated 2026-11-04).",
+   "source_ids": [
+    "S37"
+   ],
+   "quotes": {
+    "S37": [
+     "Unless models are labeled \"Anthropic models with Data Retention,\" the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) apply to the use of Claude models from Anthropic through Microsoft's enterprise Online Services. ",
+     "Important\n\n- Claude models deployed in Microsoft offerings such as Microsoft Copilot, Researcher, Copilot Studio, Power Platform, and Copilot in Microsoft 365 apps are currently excluded from the EU Data Boundary, and when applicable, in-country processing commitments. Customers within the EU Data Boundary and customers in the UK have Claude models disabled by default.\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-053",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "EU residency commitments do not extend to those Copilot-embedded Claude models, which are off by default for EU and UK tenants.",
+   "source_ids": [
+    "S37"
+   ],
+   "quotes": {
+    "S37": [
+     "Unless models are labeled \"Anthropic models with Data Retention,\" the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) apply to the use of Claude models from Anthropic through Microsoft's enterprise Online Services. ",
+     "Important\n\n- Claude models deployed in Microsoft offerings such as Microsoft Copilot, Researcher, Copilot Studio, Power Platform, and Copilot in Microsoft 365 apps are currently excluded from the EU Data Boundary, and when applicable, in-country processing commitments. Customers within the EU Data Boundary and customers in the UK have Claude models disabled by default.\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-054",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Whether ZDR can be enabled for Claude in Foundry. A Microsoft employee's Q&A answer (July 2026) points to an Anthropic request form at https://claude.com/form/azure-data-retention-request, but Anthropic's retention docs list ZDR only for its API, Claude Platform on AWS and the Anthropic-managed Google offering.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "open the form URL and ask Anthropic to confirm in writing.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-055",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Reselling or redistributing Azure services is prohibited as a general rule in the Product Terms (Microsoft Customer Agreement view).",
+   "source_ids": [
+    "S34"
+   ],
+   "quotes": {
+    "S34": [
+     "Limitations Customer may not resell or redistribute the Microsoft Azure Services, or allow multiple users to directly or indirectly access any Microsoft Azure Service feature that is made available on a per user basis (e.g., Microsoft Entra ID). ",
+     "Despite anything to the contrary in Customer\u2019s licensing agreement, Customer may permit third parties to access and use the Microsoft Azure Services solely in connection with the use of that Customer Solution . Customer is responsible for: (1) ensuring that third parties who access, use or distribute the Customer Solution comply with these terms, the terms and conditions of Customer's licensing agreement, and all applicable laws; and (2) obtaining any necessary licenses related to Standard s in a Customer Solution . ",
+     "Any third-party models that Microsoft makes available through Microsoft Foundry Models (including in a Model Catalog, Model Registry, or otherwise), but which are not Foundry Models sold by Azure or First-Party Consumption Services , are Non-Microsoft Products and subject to the terms for Non-Microsoft Products. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-056",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "The \"Azure Customer Solution\" clause is the exception that makes a Nihilo-hosted model licensable: third parties may use Azure services when that use is tied to the customer's own solution, and the customer answers for their compliance.",
+   "source_ids": [
+    "S34"
+   ],
+   "quotes": {
+    "S34": [
+     "Limitations Customer may not resell or redistribute the Microsoft Azure Services, or allow multiple users to directly or indirectly access any Microsoft Azure Service feature that is made available on a per user basis (e.g., Microsoft Entra ID). ",
+     "Despite anything to the contrary in Customer\u2019s licensing agreement, Customer may permit third parties to access and use the Microsoft Azure Services solely in connection with the use of that Customer Solution . Customer is responsible for: (1) ensuring that third parties who access, use or distribute the Customer Solution comply with these terms, the terms and conditions of Customer's licensing agreement, and all applicable laws; and (2) obtaining any necessary licenses related to Standard s in a Customer Solution . ",
+     "Any third-party models that Microsoft makes available through Microsoft Foundry Models (including in a Model Catalog, Model Registry, or otherwise), but which are not Foundry Models sold by Azure or First-Party Consumption Services , are Non-Microsoft Products and subject to the terms for Non-Microsoft Products. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-057",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "The exact current definition of \"Customer Solution\". A search snippet from Microsoft's licensing guidance says the solution must add \"primary and significant functionality\" to Azure, but I did not load the Product Terms glossary.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "open https://www.microsoft.com/licensing/guidance/Azure-Customer-Solution and the Product Terms glossary, and confirm an ICM workspace runtime qualifies.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-058",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Third-party models in Foundry sit outside Microsoft's own product commitments.",
+   "source_ids": [
+    "S34"
+   ],
+   "quotes": {
+    "S34": [
+     "Limitations Customer may not resell or redistribute the Microsoft Azure Services, or allow multiple users to directly or indirectly access any Microsoft Azure Service feature that is made available on a per user basis (e.g., Microsoft Entra ID). ",
+     "Despite anything to the contrary in Customer\u2019s licensing agreement, Customer may permit third parties to access and use the Microsoft Azure Services solely in connection with the use of that Customer Solution . Customer is responsible for: (1) ensuring that third parties who access, use or distribute the Customer Solution comply with these terms, the terms and conditions of Customer's licensing agreement, and all applicable laws; and (2) obtaining any necessary licenses related to Standard s in a Customer Solution . ",
+     "Any third-party models that Microsoft makes available through Microsoft Foundry Models (including in a Model Catalog, Model Registry, or otherwise), but which are not Foundry Models sold by Azure or First-Party Consumption Services , are Non-Microsoft Products and subject to the terms for Non-Microsoft Products. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-059",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "No separate signature is needed for Microsoft's HIPAA BAA, which comes through the Product Terms and DPA. The Learn page is dated 2023-04-06, older than six months, so treat it as suspect until rechecked.",
+   "source_ids": [
+    "S30"
+   ],
+   "quotes": {
+    "S30": [
+     "**  \nThere is no separate contract to sign to enter into a HIPAA Business Associate Agreement (BAA) with Microsoft because the [HIPAA BAA](https://aka.ms/baa) is available via the Microsoft [Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) (formerly Online Services Terms) by default to all customers who are covered entities or business associates under HIPAA. ",
+     "If you're a SaaS provider of a healthcare solution deployed on Azure, your customers who are healthcare providers or covered entities under HIPAA can sign a BAA directly with you. They don't need to have a BAA in place with Microsoft to use your SaaS solution. ",
+     "Microsoft can't use a customer's BAA. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-060",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "For a SaaS provider on Azure, Microsoft's stated position is that the provider's healthcare customers sign a BAA with the provider, not with Microsoft (same 2023 page).",
+   "source_ids": [
+    "S30"
+   ],
+   "quotes": {
+    "S30": [
+     "**  \nThere is no separate contract to sign to enter into a HIPAA Business Associate Agreement (BAA) with Microsoft because the [HIPAA BAA](https://aka.ms/baa) is available via the Microsoft [Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) (formerly Online Services Terms) by default to all customers who are covered entities or business associates under HIPAA. ",
+     "If you're a SaaS provider of a healthcare solution deployed on Azure, your customers who are healthcare providers or covered entities under HIPAA can sign a BAA directly with you. They don't need to have a BAA in place with Microsoft to use your SaaS solution. ",
+     "Microsoft can't use a customer's BAA. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-061",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Custom BAAs are off the table with Microsoft (same 2023 page).",
+   "source_ids": [
+    "S30"
+   ],
+   "quotes": {
+    "S30": [
+     "**  \nThere is no separate contract to sign to enter into a HIPAA Business Associate Agreement (BAA) with Microsoft because the [HIPAA BAA](https://aka.ms/baa) is available via the Microsoft [Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) (formerly Online Services Terms) by default to all customers who are covered entities or business associates under HIPAA. ",
+     "If you're a SaaS provider of a healthcare solution deployed on Azure, your customers who are healthcare providers or covered entities under HIPAA can sign a BAA directly with you. They don't need to have a BAA in place with Microsoft to use your SaaS solution. ",
+     "Microsoft can't use a customer's BAA. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-062",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Current text of the Microsoft Products and Services DPA (sub-processor notice period, incident notification wording) and whether Foundry, Container Apps and the other planned services are in HIPAA BAA scope. I found only third-party copies of older DPA versions; those copies contemplate the customer acting as a processor with Microsoft as sub-processor.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "download the current DPA from https://aka.ms/dpa and the BAA from https://aka.ms/baa, and check the \"Cloud services in audit scope\" page on Microsoft Learn.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-063",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "GDPR Article 28 requires a written contract between controller and processor covering subject matter, duration, nature and purpose, data types and data subjects (EUR-Lex text via search result, not a full fetch).",
+   "source_ids": [
+    "S40"
+   ],
+   "quotes": {
+    "S40": [
+     "by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the...",
+     "That contract or other legal act shall stipulate, in particular, that the processor:\n\nThe contract or the other legal act referred to in paragraphs 3 ...",
+     "Article 28\n\nProcessor\n\nThe processor shall not engage another processor without prior specific or general written authorisation of the controller.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-064",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Sub-processors need the controller's prior written authorization under Article 28(2).",
+   "source_ids": [
+    "S40"
+   ],
+   "quotes": {
+    "S40": [
+     "by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the...",
+     "That contract or other legal act shall stipulate, in particular, that the processor:\n\nThe contract or the other legal act referred to in paragraphs 3 ...",
+     "Article 28\n\nProcessor\n\nThe processor shall not engage another processor without prior specific or general written authorisation of the controller.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-065",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Flow-down is mandatory under Article 28(4): the sub-processor contract must carry the same data protection obligations as the controller's contract with the processor (reproduction of the GDPR text, secondary site).",
+   "source_ids": [
+    "S41"
+   ],
+   "quotes": {
+    "S41": [
+     "** Where a processor engages another processor for carrying out specific processing activities on behalf of the controller, the same data protection o..."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-066",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Liability for a sub-processor's failure stays with the first processor (reproduction of the GDPR text, secondary site).",
+   "source_ids": [
+    "S42"
+   ],
+   "quotes": {
+    "S42": [
+     "That contract or other legal act shall stipulate, in particular, that the processor:\n\nWhere that other processor fails to fulfil its data protection o..."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-067",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Record-keeping and breach notice to the controller are direct processor duties (EUR-Lex snippet, Articles 30 and 33).",
+   "source_ids": [
+    "S40"
+   ],
+   "quotes": {
+    "S40": [
+     "by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the...",
+     "That contract or other legal act shall stipulate, in particular, that the processor:\n\nThe contract or the other legal act referred to in paragraphs 3 ...",
+     "Article 28\n\nProcessor\n\nThe processor shall not engage another processor without prior specific or general written authorisation of the controller.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-068",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Under HIPAA, HHS guidance (last reviewed October 21, 2026) treats any subcontractor handling PHI for a business associate as a business associate itself.",
+   "source_ids": [
+    "S29"
+   ],
+   "quotes": {
+    "S29": [
+     "A business associate also is any subcontractor that creates, receives, maintains, or transmits PHI on behalf of another business associate.",
+     "- IT contractor or vendor (*e.g.*, EHR vendor, Managed Services Provider) that provides maintenance and/or support services (either in person or remotely) for information systems that require the contractor or vendor to create, receive, maintain, or transmit ePHI.\n",
+     "A business associate must establish a BAA with its subcontractor before disclosing PHI to the subcontractor for work to be done for a covered entity.[5](#footnote5_kRN6p-OhmNBKzUNlIxB0E7AJ8yT-zOaRGBdT7tHeyYg \"A covered entity is not required to establish a BAA directly with a subcontractor of its business associate. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-069",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "HHS's own examples of business associates include cloud providers, managed service providers with system access, and third-party chatbot vendors, which between them describe every Nihilo hosting model.",
+   "source_ids": [
+    "S29"
+   ],
+   "quotes": {
+    "S29": [
+     "A business associate also is any subcontractor that creates, receives, maintains, or transmits PHI on behalf of another business associate.",
+     "- IT contractor or vendor (*e.g.*, EHR vendor, Managed Services Provider) that provides maintenance and/or support services (either in person or remotely) for information systems that require the contractor or vendor to create, receive, maintain, or transmit ePHI.\n",
+     "A business associate must establish a BAA with its subcontractor before disclosing PHI to the subcontractor for work to be done for a covered entity.[5](#footnote5_kRN6p-OhmNBKzUNlIxB0E7AJ8yT-zOaRGBdT7tHeyYg \"A covered entity is not required to establish a BAA directly with a subcontractor of its business associate. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-070",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Timing matters: the downstream BAA has to exist before any PHI moves to the subcontractor, and the covered entity does not need its own BAA with that subcontractor.",
+   "source_ids": [
+    "S29"
+   ],
+   "quotes": {
+    "S29": [
+     "A business associate also is any subcontractor that creates, receives, maintains, or transmits PHI on behalf of another business associate.",
+     "- IT contractor or vendor (*e.g.*, EHR vendor, Managed Services Provider) that provides maintenance and/or support services (either in person or remotely) for information systems that require the contractor or vendor to create, receive, maintain, or transmit ePHI.\n",
+     "A business associate must establish a BAA with its subcontractor before disclosing PHI to the subcontractor for work to be done for a covered entity.[5](#footnote5_kRN6p-OhmNBKzUNlIxB0E7AJ8yT-zOaRGBdT7tHeyYg \"A covered entity is not required to establish a BAA directly with a subcontractor of its business associate. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-071",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Output ownership sits with whoever is Anthropic's contracting customer.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-072",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "In the Nihilo-hosted model that customer is Nihilo, so the client owns its outputs only if Nihilo's client contract says so. In the client-tenant model the client is the customer and owns outputs directly.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-073",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Training on customer content is ruled out in the Commercial Terms.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-074",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Nihilo's Anthropic agreement cannot be handed to a client, since assignment needs Anthropic's written consent.",
+   "source_ids": [
+    "S22"
+   ],
+   "quotes": {
+    "S22": [
+     "** Subject to these Terms, Anthropic gives Customer permission to use the Services, including to power products and services Customer makes available to its own customers and end users (\u201c**Users**\u201d).\n\n",
+     "** Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party\u2019s attempt at any of the conduct restricted in this sentence.\n\n",
+     "** Customer is responsible for all activity under its account. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-075",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "A buyout therefore means the client opens its own Anthropic relationship (its own Console organization or its own Foundry Marketplace acceptance). Any BAA or ZDR arrangement is per organization and has to be re-established by the client.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-076",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Paying for bespoke work does not by itself make the client the copyright owner under US law. Per Copyright Office Circular 30 (revised 08/2024), a commissioned work is \"made for hire\" only when it fits one of nine listed categories and a signed written agreement says so.",
+   "source_ids": [
+    "S36"
+   ],
+   "quotes": {
+    "S36": [
+     "There must be a written agreement between the party that ordered or commissioned the \r\nwork and individual(s) who actually created the work.\r\n",
+     "The agreement must be signed by all parties.\r\nIf a work fails to satisfy any of these requirements, it is not a work made for hire."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-077",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Software, scripts and ICM context files are not obviously within the nine categories, so by default Nihilo keeps the copyright in what it builds. That supports the \"Nihilo owns it, client pays to own it\" model, but only if the contract states a license during the term and an express written assignment at buyout.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-078",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Moving an Azure subscription to the client's directory is possible but destructive for identity: role assignments and custom roles are wiped (Microsoft Learn, last updated 2026-06-16).",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-079",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Managed identities and Key Vault need rework after such a transfer.",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-080",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Customer-managed keys can turn a transfer into permanent data loss.",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-081",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Some services cannot move at all (AKS clusters, for example), and CSP subscriptions cannot change directory.",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-082",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Old credentials survive the move, so a clean handover includes rotating them.",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-083",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "confirmed",
+   "statement": "Microsoft itself lists two alternatives to a transfer: rebuild in the target and copy data, or leave the subscription in place and delegate access with Azure Lighthouse.",
+   "source_ids": [
+    "S35"
+   ],
+   "quotes": {
+    "S35": [
+     "For example, all role assignments and custom roles in Azure role-based access control (Azure RBAC) are **permanently** deleted from the source directory and aren't transferred to the target directory.\n\n",
+     "|\n| User-assigned managed identities                                                                                                           | Yes      | Yes               | [List managed identities](#list-role-assignments-for-managed-identities)                                                                   | You must delete, re-create, and attach the managed identities to the appropriate resource. ",
+     "|\n| Azure Key Vault                                                                                                                            | Yes      | Yes               | [List Key Vault access policies](#list-key-vaults)                                                                                         | You must update the tenant ID associated with the key vaults. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-084",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "unverified",
+   "statement": "Whether a Claude deployment and its Marketplace subscription survive a subscription transfer between tenants or billing accounts. The transfer article does not list Foundry or Marketplace offers.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "test with a throwaway subscription in Nihilo's two Azure subscriptions, and ask Microsoft Support.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-085",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Design for buyout from day one: one Azure subscription per client, everything in infrastructure-as-code, no AKS, and no customer-managed keys that tie to Nihilo's Key Vault. The cleanest buyout is a scripted redeploy into the client's tenant plus a data copy, not a subscription transfer.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-086",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Data residency: Residency is a deployment choice, not a hosting-model property. The Azure-hosted Foundry option keeps data at rest in the selected geography; the Anthropic-hosted option does not promise that. Details are with WP-Q06A and WP-Q06B.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-087",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Processor obligations: In model (a) Nihilo carries that for both Microsoft and Anthropic. In model (b) the chain does not run through Nihilo.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-088",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Ownership and buyout: By default Nihilo owns the copyright in what it builds and, in model (a), is the contractual owner of outputs. A buyout must transfer by contract: a written IP assignment for workspace files, scripts and infrastructure code; output and data ownership; the Azure environment (redeploy preferred); exported logs and run history; and rotated credentials. The Anthropic agreement, BAA and ZDR do not transfer. The client needs its own.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPQ05A-089",
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "status": "inference",
+   "statement": "Regulated buyers: Model (a) is the hardest sell to them: Nihilo becomes a business associate or processor with two sub-processors, a small balance sheet, and Anthropic liability capped at Nihilo's own spend. Model (b) puts the vendor paper directly between the client and Microsoft and Anthropic, which is the pattern their security teams already know.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  }
+ ],
+ "open_questions": [
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Does a managed ICM service count as \"resale\" under Commercial Terms D.4?",
+   "next_check": "written question to Anthropic sales; read https://claude.com/partners/services."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Anthropic's current sub-processor list.",
+   "next_check": "open https://www.anthropic.com/subprocessors in a browser."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Will Anthropic grant ZDR, or self-serve HIPAA enablement, to a low-volume organization?",
+   "next_check": "look for the HIPAA compliance card at platform.claude.com/settings/privacy in Nihilo's Console organization; ask sales about ZDR."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Is ZDR available for Claude in Foundry?",
+   "next_check": "open https://claude.com/form/azure-data-retention-request and confirm with Anthropic."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Current Microsoft DPA and BAA text, and whether Foundry and Container Apps are in BAA scope.",
+   "next_check": "https://aka.ms/dpa, https://aka.ms/baa, and the \"Cloud services in audit scope\" Learn page."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Exact \"Customer Solution\" definition and whether a thin ICM runtime meets it.",
+   "next_check": "Product Terms glossary and the Azure Customer Solution guidance page."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Does a Foundry Claude deployment survive a subscription or billing transfer?",
+   "next_check": "test between Nihilo's two subscriptions."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "Can client staff be seated on Nihilo's Claude Team plan without breaching the terms? Not addressed on any page retrieved.",
+   "next_check": "ask Anthropic support; the safer default is that each client buys its own seats."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "IP assignment wording and non-US client rules (UK and EU copyright, GDPR representative duties).",
+   "next_check": "engage counsel for an MSA, DPA and BAA template set."
+  },
+  {
+   "wp": "WP-Q05A",
+   "ref": "Q5",
+   "question": "The Usage Policy shows an effective date of Nov 12, 2026.",
+   "next_check": "re-read it after that date and compare against the version history for changes to the resale and high-risk sections."
+  }
+ ]
+}

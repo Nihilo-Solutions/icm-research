@@ -6,6 +6,7 @@
 #   angles: search leads (suggestions, not limits)
 #   start_urls: pages the worker may fetch directly
 #   max_searches / max_fetches: per-worker caps (cost control)
+#   data_snapshots: official JSON APIs the harness fetches itself and attaches as citable search results
 
 # Revised 2026-11-11 after the stage 01 plan review (run 20261111-022157-icm-v1):
 # added WP-X1, split WP-Q04B (B, C) and WP-Q05 (A, B), added ownership notes and checks.
@@ -363,11 +364,31 @@ packages:
   must_answer:
   - Per-token prices for current Claude models on the Anthropic API, Microsoft Foundry, Amazon Bedrock, and Google Cloud, each from the vendor's own pricing page, with access date
   - Batch and prompt caching discounts where the vendor page lists them
-  - List prices at small scale for the Azure services named in Q6 and Q12 (Container Apps, Functions, Storage, Key Vault, private endpoints, Service Bus, Log Analytics ingestion and retention, Sentinel)
+  - List prices at small scale for the Azure services named in Q6 and Q12 (Container Apps, Functions, Storage, Key Vault, private endpoints, Service Bus, Log Analytics ingestion and retention, Sentinel), taken from the attached Azure Retail Prices API snapshots, with the meter name and unit for each price
+  - Free grants or included allowances (for example the Container Apps monthly free grant and Log Analytics free ingestion), from the pricing pages, since the API lists meters, not grants
   - A worked monthly running cost for one small client and one mid-market client, tagged estimate, with run volume assumptions stated
   angles:
   - Vendor pricing pages only, no secondary price aggregators
   - Seat prices are owned by WP-Q04A and WP-Q04B; do not search them here
+  - Azure dollar prices come from the attached API snapshots (official, primary). Do not use secondary price aggregators for Azure.
+  - Bedrock prices did not render on aws.amazon.com in the pilot; try the Bedrock pricing page again and the AWS docs, and mark unverified if the tables still do not load
+  data_snapshots:
+  - title: 'Azure Retail Prices API: Azure Container Apps, East US, consumption'
+    azure_retail_filter: serviceName eq 'Azure Container Apps' and armRegionName eq 'eastus' and priceType eq 'Consumption'
+  - title: 'Azure Retail Prices API: Azure Functions, East US, consumption'
+    azure_retail_filter: serviceName eq 'Functions' and armRegionName eq 'eastus' and priceType eq 'Consumption'
+  - title: 'Azure Retail Prices API: Blob Storage Hot LRS, East US'
+    azure_retail_filter: productName eq 'Blob Storage' and skuName eq 'Hot LRS' and armRegionName eq 'eastus'
+  - title: 'Azure Retail Prices API: Key Vault, East US'
+    azure_retail_filter: serviceName eq 'Key Vault' and productName eq 'Key Vault' and armRegionName eq 'eastus'
+  - title: 'Azure Retail Prices API: Private Link (private endpoints), Global'
+    azure_retail_filter: productName eq 'Virtual Network Private Link' and armRegionName eq 'Global'
+  - title: 'Azure Retail Prices API: Service Bus, East US, consumption'
+    azure_retail_filter: serviceName eq 'Service Bus' and armRegionName eq 'eastus' and priceType eq 'Consumption'
+  - title: 'Azure Retail Prices API: Log Analytics, East US, consumption'
+    azure_retail_filter: serviceName eq 'Log Analytics' and armRegionName eq 'eastus' and priceType eq 'Consumption'
+  - title: 'Azure Retail Prices API: Microsoft Sentinel, East US, consumption'
+    azure_retail_filter: serviceName eq 'Sentinel' and armRegionName eq 'eastus' and priceType eq 'Consumption'
   start_urls:
   - https://platform.claude.com/docs/en/about-claude/pricing
   - https://azure.microsoft.com/en-us/pricing/details/container-apps/

@@ -35,7 +35,7 @@ class SourceRegistry:
         if title and not rec["title"]:
             rec["title"] = title
         for k, v in meta.items():
-            if v and k in ("page_age", "retrieved_at"):
+            if v and k in ("page_age", "retrieved_at", "snapshot"):
                 rec[k] = v
             elif v and k == "cited_text" and v not in rec["cited_texts"] and len(rec["cited_texts"]) < 12:
                 rec["cited_texts"].append(v)
@@ -85,6 +85,8 @@ def render_with_markers(blocks: list[dict], reg: SourceRegistry, run_date: str, 
                 page_age = next((r.get("page_age") for r in consulted if r.get("url") == c["url"]), None)
                 sid = reg.add(c["url"], c.get("title"), run_date, cited_text=c.get("cited_text"),
                               page_age=page_age, seen_in=owner)
+            elif c.get("source"):  # search_result_location: a harness data snapshot
+                sid = reg.add(c["source"], c.get("title"), run_date, cited_text=c.get("cited_text"), seen_in=owner)
             else:  # citation into a fetched document
                 doc = next((d for d in fetched if d["title"] and d["title"] == c.get("document_title")), None)
                 idx = c.get("document_index")

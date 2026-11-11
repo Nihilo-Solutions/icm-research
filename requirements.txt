@@ -1,3 +1,4 @@
 anthropic>=2.8.0
 pyyaml>=6.0
+certifi>=2024.2.2
 pytest>=8.0

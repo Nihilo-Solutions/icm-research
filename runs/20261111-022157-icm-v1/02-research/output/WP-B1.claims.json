@@ -1,0 +1,1087 @@
+{
+ "meta": {
+  "wp": "WP-B1",
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "fallbacks": 0,
+  "stop_reason": "end_turn",
+  "cost_usd": 1.207,
+  "searches": 12,
+  "fetches": 21
+ },
+ "claims": [
+  {
+   "id": "C-WPB1-001",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "confirmed",
+   "statement": "The arXiv record for 2603.16021 carries the title \"Interpretable Context Methodology: Folder Structure as Agentic Architecture,\" names Jake Van Clief and David McDermott as authors, and files it under cs.AI and cs.HC.",
+   "source_ids": [
+    "S1"
+   ],
+   "quotes": {
+    "S1": [
+     "# Interpretable Context Methodology: Folder Structure as Agentic Architecture\n\n- **Authors:** Jake Van Clief, David McDermott\n- **arXiv:** 2603.16021v2\n- **Subjects:** cs.AI cs.HC\n- **Submitted:** 2026-03-17\n- **This version:** v2 2026-03-18\n- **PDF:** https://arxiv.org/pdf/2603.16021v2\n\n## Abstract\n\nCurrent approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. ",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-002",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "confirmed",
+   "statement": "Two versions exist: the first submission dated 2026-03-17 and v2 dated 2026-03-18, with the unversioned URL resolving to v2. An independent October 2026 write-up likewise counted only v1 and v2.",
+   "source_ids": [
+    "S1",
+    "S12"
+   ],
+   "quotes": {
+    "S1": [
+     "# Interpretable Context Methodology: Folder Structure as Agentic Architecture\n\n- **Authors:** Jake Van Clief, David McDermott\n- **arXiv:** 2603.16021v2\n- **Subjects:** cs.AI cs.HC\n- **Submitted:** 2026-03-17\n- **This version:** v2 2026-03-18\n- **PDF:** https://arxiv.org/pdf/2603.16021v2\n\n## Abstract\n\nCurrent approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. ",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ],
+    "S12": [
+     "Version history per the [arXiv abstract page](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm): v1 posted 2026-03-17, v2 posted 2026-03-18. ",
+     "The argument is the Interpretable Context Methodology, or ICM, set out by Jake Van Clief with David McDermott in the self-published preprint [Interpretable Context Methodology: Folder Structure as Agentic Architecture](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm).",
+     "It is self-reported, the collection was informal, the community is small and selected, and a single model family means the curve could be a property of that family rather than of the method. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-003",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "confirmed",
+   "statement": "Both HTML renderings (v1 and v2) carry a CC BY 4.0 license label, and their in-document title ends in \"Agent Architecture\" where the arXiv listing says \"Agentic Architecture\". Cite the arXiv listing title.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-004",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "confirmed",
+   "statement": "A single combined affiliation line (Eduba, University of Edinburgh, Palm Coast, Florida) and an eduba.io contact address accompany the two author names. The line does not say which author belongs to which institution, so \"a University of Edinburgh paper\" is an overclaim.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-005",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "confirmed",
+   "statement": "ResearchGate tags the item as a preprint dated March 2026. An independent reviewer (Hosaka blog, October 2026) also treats it as a self-published preprint.",
+   "source_ids": [
+    "S16",
+    "S12"
+   ],
+   "quotes": {
+    "S16": [
+     "Values are approximate and based on practitioner self-report through conversation, not in\n\nInterpretable Context Methodology: Folder Structure as Agen..."
+    ],
+    "S12": [
+     "Version history per the [arXiv abstract page](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm): v1 posted 2026-03-17, v2 posted 2026-03-18. ",
+     "The argument is the Interpretable Context Methodology, or ICM, set out by Jake Van Clief with David McDermott in the self-published preprint [Interpretable Context Methodology: Folder Structure as Agentic Architecture](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm).",
+     "It is self-reported, the collection was informal, the community is small and selected, and a single model family means the curve could be a property of that family rather than of the method. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-006",
+   "wp": "WP-B1",
+   "ref": "B1",
+   "status": "unverified",
+   "statement": "\"Not peer reviewed\" rests on absence: no retrieved page showed a journal reference, DOI or venue, but the fetch tool returned condensed arXiv metadata.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "Open https://arxiv.org/abs/2603.16021 in a browser and read the \"Comments\" and \"Journal reference\" fields, then search the ACM Digital Library and Google Scholar for the exact title.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-007",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "corrected",
+   "statement": "The brief called \"Model Workspace Protocol (MWP)\" an unverified alternate name. Version 1 of the paper used Model Workspace Protocol (MWP) as the method's name throughout the abstract and body.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-008",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "confirmed",
+   "statement": "Version 2, posted a day later, swaps that name for Interpretable Context Methodology (ICM) in the same sentences.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-009",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "confirmed",
+   "statement": "The arXiv listing's abstract was not updated and still introduces the method as MWP.",
+   "source_ids": [
+    "S1"
+   ],
+   "quotes": {
+    "S1": [
+     "# Interpretable Context Methodology: Folder Structure as Agentic Architecture\n\n- **Authors:** Jake Van Clief, David McDermott\n- **arXiv:** 2603.16021v2\n- **Subjects:** cs.AI cs.HC\n- **Submitted:** 2026-03-17\n- **This version:** v2 2026-03-18\n- **PDF:** https://arxiv.org/pdf/2603.16021v2\n\n## Abstract\n\nCurrent approaches to AI agent orchestration typically involve building multi-agent frameworks that manage context passing, memory, error handling, and step coordination through code. ",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-010",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "confirmed",
+   "statement": "The repo still carries the old name in three places: the LICENSE copyright holder reads \"Model Workspace Protocol Contributors\"; the canonical conventions file is headed \"MWP Conventions\"; the README's origin note cites the paper under a Model Workspace Protocol title, credits Van Clief alone, and links to a placeholder path.",
+   "source_ids": [
+    "S5",
+    "S9",
+    "S2"
+   ],
+   "quotes": {
+    "S5": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)\n\n/\n\n# LICENSE\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Code\n\n- Blame\n\n21 lines (17 loc) \u00b7 1.07 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/LICENSE)\n\nCopy raw file\n\nDownload raw file\n\nOpen symbols panel\n\nEdit and raw actions\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\nMIT License\n\nCopyright (c) 2026 Model Workspace Protocol Contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\n\nof this software and associated documentation files (the \"Software\"), to deal\n\nin the Software without restriction, including without limitation the rights\n\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n\ncopies of the Software, and to permit persons to whom the Software is\n\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\n\ncopies or substantial portions of the Software.\n\n"
+    ],
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ],
+    "S2": [
+     "For the academic treatment, see [Model Workspace Protocol: Folder Structure as Agent Architecture](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/link-to-paper) (Van Clief, 2026).\n\n",
+     "### Resources\n\n[Readme](#readme-ov-file)\n\n[MIT license](#MIT-1-ov-file)\n\n[Activity](https://github.com/RinDig/Interpretable-Context-Methodology/activity)\n\n### Stars\n\n**1.4k** stars\n\n### Watchers\n\n**42** watching\n\n### Forks\n\n[**243** forks](https://github.com/RinDig/Interpretable-Context-Methodology/forks)\n\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology&report=RinDig%20%28user%29)\n\nmain\n\n[Branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n[/RinDig/Interpretable-Context-Methodology/branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[/RinDig/Interpretable-Context-Methodology/tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Latest commit\n\n\u00a0\n\n## History\n\n[21 Commits](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)\n\n[/RinDig/Interpretable-Context-Methodology/commits/main/](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)21 Commits\n\n## Folders and files\n\n| Name                                                                                                        |   | Name                                                                                                        | Last commit message | Last commit date |\n|-------------------------------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------------------------------|---------------------|------------------|\n| [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |   | [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |                     |                  |\n| [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |   | [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |                     |                  |\n| [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |   | [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |                     |                  |\n| [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |   | [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |                     |                  |\n| [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |   | [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |                     |                  |\n| [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |   | [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |                     |                  |\n| View all files                                                                                              |   |                                                                                                             |                     |                  |\n\n## Repository files navigation\n\n- [README](#)\n- [MIT license](#)\n\nMore items\n\n# Interpretable Context Methodology (ICM)\n\n[#interpretable-context-methodology-icm](#interpretable-context-methodology-icm)\n\nFolder structure as agent architecture.\n\n",
+     "**Created by Jake Van Clief**\n\n* * *\n\n## Why This Exists\n\n[#why-this-exists](#why-this-exists)\n\nThere are genuinely good agentic frameworks available today. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-011",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "confirmed",
+   "statement": "An open third-party pull request (#12, August 2026) offers to finish the MWP to ICM rename and counts 16 stale references.",
+   "source_ids": [
+    "S13"
+   ],
+   "quotes": {
+    "S13": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)\n\n## Repository navigation\n\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues5\u00a0(5)](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\nMore items\n\n# All pull requests\n\n[Labels 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/labels)[Milestones 0\u00a0(0)](https://github.com/RinDig/Interpretable-Context-Methodology/milestones)[New pull request](https://github.com/RinDig/Interpretable-Context-Methodology/compare)\n\nSearch pull requests\n\nis:pr state:open\n\nis:pr state:open\n\nClear filter\n\nSearch\n\n## Pull requests\n\n[Open 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen) [Closed 3\u00a0(3)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aclosed)\n\nAuthor\n\nLabel\n\nProjects\n\nMilestones Reviews\n\nAssignee Sort by Newest descendingSort\u2026Sort by Newest descending\n\nMore items\n\n- Comfortable display density\n- Compact display density\n\n- ### [Add trademark marks and name notice to README](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16)\n  \n  #16\u00b7[RinDig](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3ARinDig) opened Oct 6, 2026Owner\n  \n  \u00b7\n  \n  \u00b7\n- ### [feat: add a convention validator and CI workflow](https://github.com/RinDig/Interpretable-Context-Methodology/pull/14)\n  \n  #14\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [docs: fix references to things that do not exist](https://github.com/RinDig/Interpretable-Context-Methodology/pull/13)\n  \n  #13\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  1\n- ### [docs: complete the MWP to ICM rename (16 stale references, 2 title typos)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/12)\n  \n  #12\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  2\n- ### [fix: register voice-driven-animation in the routing tables](https://github.com/RinDig/Interpretable-Context-Methodology/pull/11)\n  \n  #11\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [fix: correct absolute /_core/ paths to relative (9 broken references)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/10)\n  \n  #10\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [Fix dead link and update url to point to the paper."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-012",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "github.com/RinDig/Interpretable-Context-Methodology is live and public, labeled MIT, with 1.4k stars, 243 forks, 42 watchers and 21 commits on main. Other pages fetched in the same session showed older cached counts (1k to 1.2k stars), so treat 1.4k as approximate.",
+   "source_ids": [
+    "S2"
+   ],
+   "quotes": {
+    "S2": [
+     "For the academic treatment, see [Model Workspace Protocol: Folder Structure as Agent Architecture](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/link-to-paper) (Van Clief, 2026).\n\n",
+     "### Resources\n\n[Readme](#readme-ov-file)\n\n[MIT license](#MIT-1-ov-file)\n\n[Activity](https://github.com/RinDig/Interpretable-Context-Methodology/activity)\n\n### Stars\n\n**1.4k** stars\n\n### Watchers\n\n**42** watching\n\n### Forks\n\n[**243** forks](https://github.com/RinDig/Interpretable-Context-Methodology/forks)\n\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology&report=RinDig%20%28user%29)\n\nmain\n\n[Branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n[/RinDig/Interpretable-Context-Methodology/branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[/RinDig/Interpretable-Context-Methodology/tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Latest commit\n\n\u00a0\n\n## History\n\n[21 Commits](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)\n\n[/RinDig/Interpretable-Context-Methodology/commits/main/](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)21 Commits\n\n## Folders and files\n\n| Name                                                                                                        |   | Name                                                                                                        | Last commit message | Last commit date |\n|-------------------------------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------------------------------|---------------------|------------------|\n| [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |   | [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |                     |                  |\n| [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |   | [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |                     |                  |\n| [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |   | [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |                     |                  |\n| [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |   | [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |                     |                  |\n| [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |   | [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |                     |                  |\n| [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |   | [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |                     |                  |\n| View all files                                                                                              |   |                                                                                                             |                     |                  |\n\n## Repository files navigation\n\n- [README](#)\n- [MIT license](#)\n\nMore items\n\n# Interpretable Context Methodology (ICM)\n\n[#interpretable-context-methodology-icm](#interpretable-context-methodology-icm)\n\nFolder structure as agent architecture.\n\n",
+     "**Created by Jake Van Clief**\n\n* * *\n\n## Why This Exists\n\n[#why-this-exists](#why-this-exists)\n\nThere are genuinely good agentic frameworks available today. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-013",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "The LICENSE file holds the standard MIT text, including the rights to use, modify, sublicense and sell, conditioned on keeping the copyright and permission notice.",
+   "source_ids": [
+    "S5"
+   ],
+   "quotes": {
+    "S5": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)\n\n/\n\n# LICENSE\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Code\n\n- Blame\n\n21 lines (17 loc) \u00b7 1.07 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/LICENSE)\n\nCopy raw file\n\nDownload raw file\n\nOpen symbols panel\n\nEdit and raw actions\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\nMIT License\n\nCopyright (c) 2026 Model Workspace Protocol Contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\n\nof this software and associated documentation files (the \"Software\"), to deal\n\nin the Software without restriction, including without limitation the rights\n\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n\ncopies of the Software, and to permit persons to whom the Software is\n\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\n\ncopies or substantial portions of the Software.\n\n"
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-014",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "GitHub's releases page for the repo is empty.",
+   "source_ids": [
+    "S3"
+   ],
+   "quotes": {
+    "S3": [
+     "- RinDig/Interpretable-Context-Methodology\nmeta-twitter:image: https://opengraph.githubassets.com/e6d8face4443316846d0e4abfe26c1c61a92016eecee044ddf11d444ab92fb27/RinDig/Interpretable-Context-Methodology\nmeta-twitter:site: @github\nmeta-twitter:title: Releases \u00b7 RinDig/Interpretable-Context-Methodology\nmeta-ui-target: full\nmeta-user-login:\nmeta-viewport: width=device-width\nmeta-visitor-hmac: de34709683905fe042f595a461024faf81903bbcc3cc12eae8b4a9401576d7a9\nmeta-visitor-payload: eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNTAwOjFDMEIyMTo4NzRFMjpCNDRBNzo2QTgyOEE5MyIsInZpc2l0b3JfaWQiOiI0NDIxODE1OTgyODkzNDY4MzA3IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=\ntitle: Releases \u00b7 RinDig/Interpretable-Context-Methodology \u00b7 GitHub\n---\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\n[/](https://github.com/)\n\n[Sign in](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology%2Freleases)\n\nAppearance settings\n\n- Platform\n\n  * AI CODE CREATION\n    + [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)\n    + [GitHub Copilot appDirect agents from issue to merge](https://github.com/features/ai/github-app)\n    + [MCP RegistryIntegrate external tools](https://github.com/mcp)\n\n  * DEVELOPER WORKFLOWS\n    + [ActionsAutomate any workflow](https://github.com/features/actions)\n    + [CodespacesInstant dev environments](https://github.com/features/codespaces)\n    + [IssuesPlan and track work](https://github.com/features/issues)\n    + [Code ReviewManage code changes](https://github.com/features/code-review)\n    + [Code QualityEnforce quality at merge](https://github.com/features/code-quality)\n\n  * APPLICATION SECURITY\n    + [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)\n    + [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)\n    + [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)\n\n  * EXPLORE\n    + [Why GitHub](https://github.com/why-github)\n    + [Documentation](https://docs.github.com)\n    + [Blog](https://github.blog)\n    + [Changelog](https://github.blog/changelog)\n    + [Marketplace](https://github.com/marketplace)\n\n  [View all features](https://github.com/features)\n\n- Solutions\n\n  * BY COMPANY SIZE\n    + [Enterprises](https://github.com/enterprise)\n    + [Small and medium teams](https://github.com/team)\n    + [Startups](https://github.com/enterprise/startups)\n    + [Nonprofits](https://github.com/solutions/industry/nonprofits)\n\n  * BY USE CASE\n    + [App Modernization](https://github.com/solutions/use-case/app-modernization)\n    + [DevSecOps](https://github.com/solutions/use-case/devsecops)\n    + [DevOps](https://github.com/solutions/use-case/devops)\n    + [CI/CD](https://github.com/solutions/use-case/ci-cd)\n    + [View all use cases](https://github.com/solutions/use-case)\n\n  * BY INDUSTRY\n    + [Healthcare](https://github.com/solutions/industry/healthcare)\n    + [Financial services](https://github.com/solutions/industry/financial-services)\n    + [Manufacturing](https://github.com/solutions/industry/manufacturing)\n    + [Government](https://github.com/solutions/industry/government)\n    + [View all industries](https://github.com/solutions/industry)\n\n  [View all solutions](https://github.com/solutions)\n\n- Resources\n\n  * EXPLORE BY TOPIC\n    + [AI](https://github.com/resources/articles?topic=ai)\n    + [Software Development](https://github.com/resources/articles?topic=software-development)\n    + [DevOps](https://github.com/resources/articles?topic=devops)\n    + [Security](https://github.com/resources/articles?topic=security)\n    + [View all topics](https://github.com/resources/articles)\n\n  * EXPLORE BY TYPE\n    + [Customer stories](https://github.com/customer-stories)\n    + [Events & webinars](https://github.com/resources/events)\n    + [Ebooks & reports](https://github.com/resources/whitepapers)\n    + [Business insights](https://github.com/solutions/executive-insights)\n    + [GitHub Skills](https://skills.github.com)\n\n  * SUPPORT & SERVICES\n    + [Documentation](https://docs.github.com)\n    + [Customer support](https://support.github.com)\n    + [Community forum](https://github.com/orgs/community/discussions)\n    + [Trust center](https://github.com/trust-center)\n    + [Partners](https://github.com/partners)\n\n  [View all resources](https://github.com/resources)\n\n- Open Source\n\n  * COMMUNITY\n    + [GitHub SponsorsFund open source developers](https://github.com/open-source/sponsors)\n\n  * PROGRAMS\n    + [Security Lab](https://securitylab.github.com)\n    + [Maintainer Community](https://maintainers.github.com)\n    + [Accelerator](https://github.com/open-source/accelerator)\n    + [GitHub Stars](https://stars.github.com)\n    + [Archive Program](https://archiveprogram.github.com)\n\n  * REPOSITORIES\n    + [Topics](https://github.com/topics)\n    + [Trending](https://github.com/trending)\n    + [Collections](https://github.com/collections)\n\n- Enterprise\n\n  * ENTERPRISE SOLUTIONS\n    + [Enterprise platformAI-powered developer platform](https://github.com/enterprise)\n\n  * AVAILABLE ADD-ONS\n    + [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)\n    + [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)\n    + [Premium SupportEnterprise-grade 24/7 support](https://github.com/enterprise/premium-support)\n\n- [Pricing](https://github.com/pricing)\n\nSearch`/`\n\n[Sign in](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology%2Freleases)\n\n[Sign up](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Freleases%2Findex&source=header-repo&source_repo=RinDig%2FInterpretable-Context-Methodology)\n\nAppearance settings\n\n[RinDig](https://github.com/RinDig)    / **[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)** Public\n\n- [Notifications](https://github.com/login?return_to=%2FRinDig%2FInterpretable-Context-Methodology)    You must be signed in to change notification settings\n- [Fork 180](https://github.com/login?return_to=%2FRinDig%2FInterpretable-Context-Methodology)\n- [Star 1k](https://github.com/login?return_to=%2FRinDig%2FInterpretable-Context-Methodology)\n\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues 3](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests 3](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\n  \n\nAdditional navigation options\n\n# Releases: RinDig/Interpretable-Context-Methodology\n\n[Releases](https://github.com/RinDig/Interpretable-Context-Methodology/releases) [Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n## There aren\u2019t any releases here\n\nYou can create a release to package software, along with release notes and links to binary files, for other people to use. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-015",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "Open work items stand at 5 issues and 9 pull requests, with 3 pull requests closed.",
+   "source_ids": [
+    "S13"
+   ],
+   "quotes": {
+    "S13": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)\n\n## Repository navigation\n\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues5\u00a0(5)](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\nMore items\n\n# All pull requests\n\n[Labels 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/labels)[Milestones 0\u00a0(0)](https://github.com/RinDig/Interpretable-Context-Methodology/milestones)[New pull request](https://github.com/RinDig/Interpretable-Context-Methodology/compare)\n\nSearch pull requests\n\nis:pr state:open\n\nis:pr state:open\n\nClear filter\n\nSearch\n\n## Pull requests\n\n[Open 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen) [Closed 3\u00a0(3)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aclosed)\n\nAuthor\n\nLabel\n\nProjects\n\nMilestones Reviews\n\nAssignee Sort by Newest descendingSort\u2026Sort by Newest descending\n\nMore items\n\n- Comfortable display density\n- Compact display density\n\n- ### [Add trademark marks and name notice to README](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16)\n  \n  #16\u00b7[RinDig](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3ARinDig) opened Oct 6, 2026Owner\n  \n  \u00b7\n  \n  \u00b7\n- ### [feat: add a convention validator and CI workflow](https://github.com/RinDig/Interpretable-Context-Methodology/pull/14)\n  \n  #14\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [docs: fix references to things that do not exist](https://github.com/RinDig/Interpretable-Context-Methodology/pull/13)\n  \n  #13\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  1\n- ### [docs: complete the MWP to ICM rename (16 stale references, 2 title typos)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/12)\n  \n  #12\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  2\n- ### [fix: register voice-driven-animation in the routing tables](https://github.com/RinDig/Interpretable-Context-Methodology/pull/11)\n  \n  #11\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [fix: correct absolute /_core/ paths to relative (9 broken references)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/10)\n  \n  #10\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [Fix dead link and update url to point to the paper."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-016",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "unverified",
+   "statement": "The latest commit date on main is unknown because GitHub's commit pages refused the fetch. A search snippet of the owner's repository list shows \"Updated Oct 6, 2026\". A third-party tracker reports a last push on Oct 6, 2026, creation on Feb 22, 2026, and no commits in the following 30 days. That date matches the owner opening the still-unmerged PR #16 from a side branch, so main may be older.",
+   "source_ids": [
+    "S17",
+    "S18",
+    "S14"
+   ],
+   "quotes": {
+    "S17": [
+     "Python 1,392 240 MIT License Updated Oct 6, 2026 Uh oh! "
+    ],
+    "S18": [
+     "# RinDig/Interpretable-Context-Methodology\n## History\n### workspaces/voice-driven-animation/skills/whisper-beat-finder/SKILL.md\nWeek of Oct 26, 2026 \u00b7..."
+    ],
+    "S14": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)\n\n## Repository navigation\n\n-\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues4 (4)](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests9 (9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\nMore items\n\n# Add trademark marks and name notice to README - #16\n\n#16\n\nOpen\n\n[RinDig](https://github.com/RinDig) wants to merge 1 commit into\n\n[main](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)RinDig/Interpretable-Context-Methodology:mainfrom\n\n[add-trademark-notice](https://github.com/RinDig/Interpretable-Context-Methodology/tree/add-trademark-notice)RinDig/Interpretable-Context-Methodology:add-trademark-noticeCopy head branch name to clipboard\n\n[Conversation](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16)[Commits1 (1)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/commits)[Checks](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/checks)[Files changed](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/files)\n\nOpen\n\n## [Add trademark marks and name notice to README](#top)#16[RinDig](https://github.com/RinDig) wants to merge 1 commit into[main](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)RinDig/Interpretable-Context-Methodology:mainfrom [add-trademark-notice](https://github.com/RinDig/Interpretable-Context-Methodology/tree/add-trademark-notice)RinDig/Interpretable-Context-Methodology:add-trademark-noticeCopy head branch name to clipboard\n\n## Conversation\n\n[![@RinDig](https://avatars.githubusercontent.com/u/173111614?s=80&amp;v=4)](https://github.com/RinDig)\n\n### @RinDig **[RinDig](https://github.com/RinDig)** commented [Oct 6, 2026](#issue-5731915193)\n\nCopy link\n\n Copy Markdown\n\nOwner\n\n## What changed\n\n- Title now reads `Interpretable Context Methodology\u2122 (ICM\u2122)`.\n",
+     "[@RinDig](https://avatars.githubusercontent.com/u/173111614?s=80&amp;v=4)](https://github.com/RinDig)\n\n### @RinDig **[RinDig](https://github.com/RinDig)** commented [Oct 6, 2026](#issue-5731915193)\n\nCopy link\n\n Copy Markdown\n\nOwner\n\n## What changed\n\n- Title now reads `Interpretable Context Methodology\u2122 (ICM\u2122)`.\n- New **Name and Trademark** section above the license. It names the owner, states that the MIT License covers the files and grants no rights in the names, and says what others may do with the names.\n\n",
+     "** The notice names Jake Van Clief, to match \"Created by Jake Van Clief\" at the top. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "Open /commits/main in a browser or run `git log -1 --format=%cd origin/main`.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-017",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "unverified",
+   "statement": "The contributor count was not shown (the Contributors panel rendered empty), and the tags page could not be fetched.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "Open /graphs/contributors and /tags in a browser.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-018",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "PR #16, opened by the repo owner on 2026-10-06, would retitle the README with trademark symbols on the full name and on \"ICM\", and add a section saying the MIT License covers the files but grants no rights in the names. Its draft notice names Jake Van Clief as the mark owner. The PR is still open.",
+   "source_ids": [
+    "S14"
+   ],
+   "quotes": {
+    "S14": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)\n\n## Repository navigation\n\n-\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues4 (4)](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests9 (9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\nMore items\n\n# Add trademark marks and name notice to README - #16\n\n#16\n\nOpen\n\n[RinDig](https://github.com/RinDig) wants to merge 1 commit into\n\n[main](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)RinDig/Interpretable-Context-Methodology:mainfrom\n\n[add-trademark-notice](https://github.com/RinDig/Interpretable-Context-Methodology/tree/add-trademark-notice)RinDig/Interpretable-Context-Methodology:add-trademark-noticeCopy head branch name to clipboard\n\n[Conversation](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16)[Commits1 (1)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/commits)[Checks](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/checks)[Files changed](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16/files)\n\nOpen\n\n## [Add trademark marks and name notice to README](#top)#16[RinDig](https://github.com/RinDig) wants to merge 1 commit into[main](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main)RinDig/Interpretable-Context-Methodology:mainfrom [add-trademark-notice](https://github.com/RinDig/Interpretable-Context-Methodology/tree/add-trademark-notice)RinDig/Interpretable-Context-Methodology:add-trademark-noticeCopy head branch name to clipboard\n\n## Conversation\n\n[![@RinDig](https://avatars.githubusercontent.com/u/173111614?s=80&amp;v=4)](https://github.com/RinDig)\n\n### @RinDig **[RinDig](https://github.com/RinDig)** commented [Oct 6, 2026](#issue-5731915193)\n\nCopy link\n\n Copy Markdown\n\nOwner\n\n## What changed\n\n- Title now reads `Interpretable Context Methodology\u2122 (ICM\u2122)`.\n",
+     "[@RinDig](https://avatars.githubusercontent.com/u/173111614?s=80&amp;v=4)](https://github.com/RinDig)\n\n### @RinDig **[RinDig](https://github.com/RinDig)** commented [Oct 6, 2026](#issue-5731915193)\n\nCopy link\n\n Copy Markdown\n\nOwner\n\n## What changed\n\n- Title now reads `Interpretable Context Methodology\u2122 (ICM\u2122)`.\n- New **Name and Trademark** section above the license. It names the owner, states that the MIT License covers the files and grants no rights in the names, and says what others may do with the names.\n\n",
+     "** The notice names Jake Van Clief, to match \"Created by Jake Van Clief\" at the top. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-019",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "inference",
+   "statement": "PR #16 signals intent to claim the names as trademarks. It is not evidence of a registration, and it changes the naming risk that WP-Q17 must assess.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-020",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "The repo links printed in the paper point to earlier names: \"Model-Workspace-Protocol-MWP-\" in v1 and \"Interpretable-Context-Methodology-ICM-\" in v2. A third-party project cites yet another spelling, \"Interpreted-Context-Methdology\", and remarks that the typo is upstream. Whether the old URLs redirect was not tested.",
+   "source_ids": [
+    "S4",
+    "S19"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ],
+    "S19": [
+     "Their reference implementation is RinDig/Interpreted-Context-Methdology *(the typo is upstream)*, and the method is taught at Clief Notes.\n\n"
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-021",
+   "wp": "WP-B1",
+   "ref": "B2",
+   "status": "confirmed",
+   "statement": "Credit in the README goes to Jake Van Clief alone as creator, while the paper lists two authors.",
+   "source_ids": [
+    "S2"
+   ],
+   "quotes": {
+    "S2": [
+     "For the academic treatment, see [Model Workspace Protocol: Folder Structure as Agent Architecture](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/link-to-paper) (Van Clief, 2026).\n\n",
+     "### Resources\n\n[Readme](#readme-ov-file)\n\n[MIT license](#MIT-1-ov-file)\n\n[Activity](https://github.com/RinDig/Interpretable-Context-Methodology/activity)\n\n### Stars\n\n**1.4k** stars\n\n### Watchers\n\n**42** watching\n\n### Forks\n\n[**243** forks](https://github.com/RinDig/Interpretable-Context-Methodology/forks)\n\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology&report=RinDig%20%28user%29)\n\nmain\n\n[Branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n[/RinDig/Interpretable-Context-Methodology/branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[/RinDig/Interpretable-Context-Methodology/tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Latest commit\n\n\u00a0\n\n## History\n\n[21 Commits](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)\n\n[/RinDig/Interpretable-Context-Methodology/commits/main/](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)21 Commits\n\n## Folders and files\n\n| Name                                                                                                        |   | Name                                                                                                        | Last commit message | Last commit date |\n|-------------------------------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------------------------------|---------------------|------------------|\n| [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |   | [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |                     |                  |\n| [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |   | [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |                     |                  |\n| [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |   | [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |                     |                  |\n| [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |   | [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |                     |                  |\n| [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |   | [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |                     |                  |\n| [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |   | [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |                     |                  |\n| View all files                                                                                              |   |                                                                                                             |                     |                  |\n\n## Repository files navigation\n\n- [README](#)\n- [MIT license](#)\n\nMore items\n\n# Interpretable Context Methodology (ICM)\n\n[#interpretable-context-methodology-icm](#interpretable-context-methodology-icm)\n\nFolder structure as agent architecture.\n\n",
+     "**Created by Jake Van Clief**\n\n* * *\n\n## Why This Exists\n\n[#why-this-exists](#why-this-exists)\n\nThere are genuinely good agentic frameworks available today. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-022",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "confirmed",
+   "statement": "Handoff works through an `output/` subfolder in every stage, which the following stage reads as its input. The README's sample tree shows numbered stage folders (`01-research`, `02-script`, `03-production`), each with its own `CONTEXT.md`, `references/` and `output/`.",
+   "source_ids": [
+    "S9",
+    "S2"
+   ],
+   "quotes": {
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ],
+    "S2": [
+     "For the academic treatment, see [Model Workspace Protocol: Folder Structure as Agent Architecture](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/link-to-paper) (Van Clief, 2026).\n\n",
+     "### Resources\n\n[Readme](#readme-ov-file)\n\n[MIT license](#MIT-1-ov-file)\n\n[Activity](https://github.com/RinDig/Interpretable-Context-Methodology/activity)\n\n### Stars\n\n**1.4k** stars\n\n### Watchers\n\n**42** watching\n\n### Forks\n\n[**243** forks](https://github.com/RinDig/Interpretable-Context-Methodology/forks)\n\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology&report=RinDig%20%28user%29)\n\nmain\n\n[Branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n[/RinDig/Interpretable-Context-Methodology/branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[/RinDig/Interpretable-Context-Methodology/tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Latest commit\n\n\u00a0\n\n## History\n\n[21 Commits](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)\n\n[/RinDig/Interpretable-Context-Methodology/commits/main/](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)21 Commits\n\n## Folders and files\n\n| Name                                                                                                        |   | Name                                                                                                        | Last commit message | Last commit date |\n|-------------------------------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------------------------------|---------------------|------------------|\n| [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |   | [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |                     |                  |\n| [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |   | [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |                     |                  |\n| [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |   | [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |                     |                  |\n| [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |   | [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |                     |                  |\n| [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |   | [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |                     |                  |\n| [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |   | [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |                     |                  |\n| View all files                                                                                              |   |                                                                                                             |                     |                  |\n\n## Repository files navigation\n\n- [README](#)\n- [MIT license](#)\n\nMore items\n\n# Interpretable Context Methodology (ICM)\n\n[#interpretable-context-methodology-icm](#interpretable-context-methodology-icm)\n\nFolder structure as agent architecture.\n\n",
+     "**Created by Jake Van Clief**\n\n* * *\n\n## Why This Exists\n\n[#why-this-exists](#why-this-exists)\n\nThere are genuinely good agentic frameworks available today. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-023",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "confirmed",
+   "statement": "Per-stage instructions live in that stage's `CONTEXT.md`, structured as a three-part contract of inputs, process and outputs.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-024",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "confirmed",
+   "statement": "Non-AI work (data fetching, file moves, formatting, email sending) falls to local Python scripts in the paper's description.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-025",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "confirmed",
+   "statement": "Review happens at stage boundaries, where a person may inspect and edit the output before the next stage starts. The conventions file makes in-stage checkpoints optional and lets linear stages run straight through.",
+   "source_ids": [
+    "S4",
+    "S9"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ],
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-026",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "inference",
+   "statement": "Human review is a convention, not an enforced gate. Nothing in the retrieved files blocks a stage from running on unreviewed output, so Nihilo would have to build approval gates.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-027",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "corrected",
+   "statement": "The brief says markdown files direct \"one agent\". The paper's own implementations had Claude Opus 4.6 as the main agent hand sub-tasks to Claude Sonnet 4.6 through Agent Teams. \"One orchestrating agent, plus sub-agents\" is the accurate reading.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-028",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "confirmed",
+   "statement": "Folder naming differs between sources. The paper's examples use underscores (`01_research`), while the repo conventions prescribe lowercase with hyphens and `01-` style prefixes.",
+   "source_ids": [
+    "S4",
+    "S9"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ],
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-029",
+   "wp": "WP-B1",
+   "ref": "B4",
+   "status": "confirmed",
+   "statement": "The README's layer table matches the brief's file names: Layer 0 `CLAUDE.md`, Layer 1 `CONTEXT.md`, Layer 2 stage `CONTEXT.md`, Layer 3 reference material, Layer 4 working artifacts. The repo conventions file and the paper's Figure 1 give the same list.",
+   "source_ids": [
+    "S2"
+   ],
+   "quotes": {
+    "S2": [
+     "For the academic treatment, see [Model Workspace Protocol: Folder Structure as Agent Architecture](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/link-to-paper) (Van Clief, 2026).\n\n",
+     "### Resources\n\n[Readme](#readme-ov-file)\n\n[MIT license](#MIT-1-ov-file)\n\n[Activity](https://github.com/RinDig/Interpretable-Context-Methodology/activity)\n\n### Stars\n\n**1.4k** stars\n\n### Watchers\n\n**42** watching\n\n### Forks\n\n[**243** forks](https://github.com/RinDig/Interpretable-Context-Methodology/forks)\n\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FRinDig%2FInterpretable-Context-Methodology&report=RinDig%20%28user%29)\n\nmain\n\n[Branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[Tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\n[/RinDig/Interpretable-Context-Methodology/branches](https://github.com/RinDig/Interpretable-Context-Methodology/branches)[/RinDig/Interpretable-Context-Methodology/tags](https://github.com/RinDig/Interpretable-Context-Methodology/tags)\n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Latest commit\n\n\u00a0\n\n## History\n\n[21 Commits](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)\n\n[/RinDig/Interpretable-Context-Methodology/commits/main/](https://github.com/RinDig/Interpretable-Context-Methodology/commits/main/)21 Commits\n\n## Folders and files\n\n| Name                                                                                                        |   | Name                                                                                                        | Last commit message | Last commit date |\n|-------------------------------------------------------------------------------------------------------------|---|-------------------------------------------------------------------------------------------------------------|---------------------|------------------|\n| [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |   | [_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core \"_core\")                |                     |                  |\n| [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |   | [workspaces](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/workspaces \"workspaces\") |                     |                  |\n| [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |   | [.gitignore](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/.gitignore \".gitignore\") |                     |                  |\n| [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |   | [CLAUDE.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/CLAUDE.md \"CLAUDE.md\")    |                     |                  |\n| [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |   | [LICENSE](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/LICENSE \"LICENSE\")          |                     |                  |\n| [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |   | [README.md](https://github.com/RinDig/Interpretable-Context-Methodology/blob/main/README.md \"README.md\")    |                     |                  |\n| View all files                                                                                              |   |                                                                                                             |                     |                  |\n\n## Repository files navigation\n\n- [README](#)\n- [MIT license](#)\n\nMore items\n\n# Interpretable Context Methodology (ICM)\n\n[#interpretable-context-methodology-icm](#interpretable-context-methodology-icm)\n\nFolder structure as agent architecture.\n\n",
+     "**Created by Jake Van Clief**\n\n* * *\n\n## Why This Exists\n\n[#why-this-exists](#why-this-exists)\n\nThere are genuinely good agentic frameworks available today. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-030",
+   "wp": "WP-B1",
+   "ref": "B4",
+   "status": "confirmed",
+   "statement": "The paper's role descriptions agree with the brief: global identity for Layer 0, workspace task routing for Layer 1, and a stage contract for Layer 2.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-031",
+   "wp": "WP-B1",
+   "ref": "B4",
+   "status": "corrected",
+   "statement": "The brief lists \"voice, style, SOPs\" for L3. The paper's own Layer 3 examples are design systems, voice rules, build conventions, style guides and domain knowledge packaged as skill files; SOPs are not named.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-032",
+   "wp": "WP-B1",
+   "ref": "B4",
+   "status": "confirmed",
+   "statement": "Layer 0 depends on a Claude Code behavior: `CLAUDE.md` is loaded automatically into every conversation. Layer 3 can also include bundled Claude Code skills in a `skills/` folder. Both matter for WP-Q02 (portability).",
+   "source_ids": [
+    "S9"
+   ],
+   "quotes": {
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-033",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "corrected",
+   "statement": "The brief says \"about 52 invited users\". Fifty-two is the membership of the invite-only community the authors drew observations from. The one quantified result (30 reporting a U-shaped editing pattern) comes from 33 of those members.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-034",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "Data collection was conversational, with no structured interviews or usage logging, and the authors concede selection and enthusiasm bias.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-035",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "Testing covered one model family only, Claude Opus 4.6 and Sonnet 4.6. Claude Code was the runtime for every workspace described.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-036",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "A controlled comparison against monolithic prompting was never run, so the quality claim leans on prior literature and practitioner judgment.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-037",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "Content production accounts for most active use, with academic and policy deployments still early.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-038",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "External adoption is asserted at the University of Edinburgh Neuropolitics Lab, ICR Research and the Academy of International Affairs in Bonn, with details withheld under NDA. This is author-reported and not independently verified.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-039",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "The paper's list of poor fits matches the brief: real-time multi-agent collaboration, high-concurrency use by many simultaneous users, and complex branching driven by AI decisions mid-pipeline.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-040",
+   "wp": "WP-B1",
+   "ref": "B5",
+   "status": "confirmed",
+   "statement": "The paper's comparison table adds two more weaknesses: error recovery is a manual re-run of the failed stage, and execution is sequential by design.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-041",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "unverified",
+   "statement": "The phrase \"a map, not an engine\" did not appear in any source retrieved across six targeted searches, so its origin and author are unknown.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "Ask whoever wrote the brief for the source, and search inside Skool (login required), YouTube comments, Reddit and X.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-042",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "unverified",
+   "statement": "No retrieved source states \"no memory, no run history, stages overwrite outputs, no versioning\" as a critique in those words. The findings below show what primary sources support for each part.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-043",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "On versioning: the paper offers Git commits of stage outputs after each run as the way to get version history. Versioning is something the user adds, not something the method does.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-044",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "inference",
+   "statement": "On overwriting: output files are named by topic slug and artifact type, written into a single `output/` folder per stage, with no run ID or timestamp. A re-run on the same topic would therefore replace the earlier file unless Git captured it.",
+   "source_ids": [
+    "S9"
+   ],
+   "quotes": {
+    "S9": [
+     "/[_core](https://github.com/RinDig/Interpretable-Context-Methodology/tree/main/_core)\n\n/\n\n# CONVENTIONS.md\n\nCopy path\n\nTop\n\n## File metadata and controls\n\n- Preview\n\n- Code\n\n- Blame\n\n307 lines (189 loc) \u00b7 15.8 KB\n\n[Raw](https://github.com/RinDig/Interpretable-Context-Methodology/raw/refs/heads/main/_core/CONVENTIONS.md)\n\nCopy raw file\n\nDownload raw file\n\nOutline\n\nEdit and raw actions\n\n# MWP Conventions\n\n[#mwp-conventions](#mwp-conventions)\n\nThe rules for building and maintaining MWP workspaces. ",
+     "---\n\n## Pattern 2: Stage Handoffs via Output Folders\n\n[#pattern-2-stage-handoffs-via-output-folders](#pattern-2-stage-handoffs-via-output-folders)\n\nEvery stage has an `output/` subfolder. The agent writes its artifact there. The next stage reads from the previous stage's `output/` folder.\n\n",
+     "Not every stage needs checkpoints. Linear stages (extract, render, validate) often run straight through. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-045",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "On memory and run history: GitHub issue #15 (user xnfinite, 2026-09-09) reports that after weeks of daily use, frequently used files outgrow what a session reads, catalog entries go stale, and earlier agent advice \"is just gone\". The same user published add-on skills for a ledger, verifier and maintenance checker, and asks whether the conventions should cover post-build maintenance. This is a community report, not an author statement.",
+   "source_ids": [
+    "S7"
+   ],
+   "quotes": {
+    "S7": [
+     "I've been running an ICM workspace daily for a few weeks. Building it was the  \neasy part. What I kept running into was what happens to it afterwards, across  \nsessions: hot files grow past what a session actually reads, catalog rows go  \nstale, and whatever advice the agent gave me last week is just gone.\n\n",
+     "So I wrote three skills for that and put them up under MIT:  \ngithub.com/xnfinite/icm-ops\n\nicm-ledger is the one that changed how I work. ",
+     "Is post-build maintenance something  \n_core/CONVENTIONS.md would want a section on, and if so what shape? "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-046",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "unverified",
+   "statement": "Issue #17, \"Separation of agent definition from working state ?\" (user rupertlssmith, 2026-10-22), looks relevant but its body could not be fetched.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "Open https://github.com/RinDig/Interpretable-Context-Methodology/issues/17 in a browser.",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-047",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "The authors concede a related gap. Their own wording is that ICM gives \"observability but not traceability\", with no direct way to trace an output phrase back to the instruction or file that caused it. The debugging ideas proposed to close that gap remain unbuilt.",
+   "source_ids": [
+    "S4"
+   ],
+   "quotes": {
+    "S4": [
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v2 [cs.AI] 18 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent Architecture\n\nCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh, Palm Coast, Florida, USA\n\n###### Abstract.\n\n",
+     "[References](#bib \"In Interpretable Context Methodology: Folder Structure as Agent Architecture\")\n\n[License: CC BY 4.0](https://info.arxiv.org/help/license/index.html#licenses-available)\n\narXiv:2603.16021v1 [cs.AI] 17 Mar 2026\n\n# Interpretable Context Methodology: Folder Structure as Agent ArchitectureCCS: Human-centered computing Interactive systems and toolsCCS: Human-centered computing HCI design and evaluation methodsCCS: Computing methodologies Artificial intelligenceCCS: Software and its engineering Software design engineering\n\nJake Van Clief, David McDermott email: <theceo@eduba.io> Affiliation: Eduba, University of Edinburgh , Palm Coast , Florida , USA\n\n###### Abstract.\n\n",
+     "This paper presents Model Workspace Protocol (MWP), a method that replaces framework-level orchestration with filesystem structure. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-048",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "Independent critique 1 (Hosaka blog, 2026-10-23): the reviewers discount the U-shape finding as self-reported, informally collected, from a small selected group on one model family. They also flag a mismatch between the preprint's anti-framework thesis and Eduba's site copy, which advertises building multi-agent systems.",
+   "source_ids": [
+    "S12"
+   ],
+   "quotes": {
+    "S12": [
+     "Version history per the [arXiv abstract page](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm): v1 posted 2026-03-17, v2 posted 2026-03-18. ",
+     "The argument is the Interpretable Context Methodology, or ICM, set out by Jake Van Clief with David McDermott in the self-published preprint [Interpretable Context Methodology: Folder Structure as Agentic Architecture](https://arxiv.org/abs/2603.16021?ref=blog.hosaka.fm).",
+     "It is self-reported, the collection was informal, the community is small and selected, and a single model family means the curve could be a property of that family rather than of the method. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-049",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "Independent critique 2 (Dominik J. blog, May 2026): for software projects the paper omits any check that a context rule still matches the code, and setup overhead is described as real.",
+   "source_ids": [
+    "S15"
+   ],
+   "quotes": {
+    "S15": [
+     "For software projects, one category of reference the paper doesn\u2019t address changes things: **verified references**. ",
+     "The method requires deliberate setup and does not suit real-time multi-agent systems or high-concurrency workflows. "
+    ]
+   },
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-050",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "confirmed",
+   "statement": "Repo hygiene signals: open third-party pull requests propose fixing 9 broken path references, correcting documentation that points at things that do not exist, and adding a convention validator with CI.",
+   "source_ids": [
+    "S13"
+   ],
+   "quotes": {
+    "S13": [
+     "[Interpretable-Context-Methodology](https://github.com/RinDig/Interpretable-Context-Methodology)\n\n## Repository navigation\n\n- [Code](https://github.com/RinDig/Interpretable-Context-Methodology)\n- [Issues5\u00a0(5)](https://github.com/RinDig/Interpretable-Context-Methodology/issues)\n- [Pull requests9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls)\n- [Actions](https://github.com/RinDig/Interpretable-Context-Methodology/actions)\n- [Projects](https://github.com/RinDig/Interpretable-Context-Methodology/projects)\n- [Security and quality](https://github.com/RinDig/Interpretable-Context-Methodology/security)\n- [Insights](https://github.com/RinDig/Interpretable-Context-Methodology/pulse)\n\nMore items\n\n# All pull requests\n\n[Labels 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/labels)[Milestones 0\u00a0(0)](https://github.com/RinDig/Interpretable-Context-Methodology/milestones)[New pull request](https://github.com/RinDig/Interpretable-Context-Methodology/compare)\n\nSearch pull requests\n\nis:pr state:open\n\nis:pr state:open\n\nClear filter\n\nSearch\n\n## Pull requests\n\n[Open 9\u00a0(9)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen) [Closed 3\u00a0(3)](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aclosed)\n\nAuthor\n\nLabel\n\nProjects\n\nMilestones Reviews\n\nAssignee Sort by Newest descendingSort\u2026Sort by Newest descending\n\nMore items\n\n- Comfortable display density\n- Compact display density\n\n- ### [Add trademark marks and name notice to README](https://github.com/RinDig/Interpretable-Context-Methodology/pull/16)\n  \n  #16\u00b7[RinDig](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3ARinDig) opened Oct 6, 2026Owner\n  \n  \u00b7\n  \n  \u00b7\n- ### [feat: add a convention validator and CI workflow](https://github.com/RinDig/Interpretable-Context-Methodology/pull/14)\n  \n  #14\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [docs: fix references to things that do not exist](https://github.com/RinDig/Interpretable-Context-Methodology/pull/13)\n  \n  #13\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  1\n- ### [docs: complete the MWP to ICM rename (16 stale references, 2 title typos)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/12)\n  \n  #12\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n  \n  2\n- ### [fix: register voice-driven-animation in the routing tables](https://github.com/RinDig/Interpretable-Context-Methodology/pull/11)\n  \n  #11\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [fix: correct absolute /_core/ paths to relative (9 broken references)](https://github.com/RinDig/Interpretable-Context-Methodology/pull/10)\n  \n  #10\u00b7[Avicennasis](https://github.com/RinDig/Interpretable-Context-Methodology/pulls?q=is%3Apr%20state%3Aopen%20author%3AAvicennasis) opened Aug 19, 2026\n  \n  \u00b7\n  \n  \u00b7\n- ### [Fix dead link and update url to point to the paper."
+    ]
+   },
+   "time_sensitive": true,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-051",
+   "wp": "WP-B1",
+   "ref": "B3",
+   "status": "inference",
+   "statement": "Human review is a convention, not an enforced gate.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-052",
+   "wp": "WP-B1",
+   "ref": "B6",
+   "status": "inference",
+   "statement": "Same-topic re-runs overwrite outputs.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  },
+  {
+   "id": "C-WPB1-053",
+   "wp": "WP-B1",
+   "ref": "B8",
+   "status": "inference",
+   "statement": "Nihilo should treat MWP and ICM as the same thing and expect clients to find both names.",
+   "source_ids": [],
+   "quotes": {},
+   "time_sensitive": false,
+   "next_check": "",
+   "notes": ""
+  }
+ ],
+ "open_questions": [
+  {
+   "wp": "WP-B1",
+   "ref": "B1",
+   "question": "Peer review status.",
+   "next_check": "Read the \"Comments\" and \"Journal reference\" fields on the arXiv abstract page in a browser, then search the ACM Digital Library and Google Scholar for the title."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B2",
+   "question": "Latest commit date on main, tags and contributor count.",
+   "next_check": "Open /commits/main, /tags and /graphs/contributors in a browser, or clone and run `git log -1` and `git shortlog -sn`."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B6",
+   "question": "Source of \"a map, not an engine\".",
+   "next_check": "Ask the brief's author where it came from, then search Skool (Clief Notes), Reddit, X and YouTube with a logged-in session."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B6",
+   "question": "Issue #17 body.",
+   "next_check": "Open the issue in a browser and record whether it documents the overwrite or state-mixing problem."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B6",
+   "question": "Overwrite behavior in practice.",
+   "next_check": "Clone the repo, run the `script-to-animation` workspace twice on the same topic, and diff `output/` to confirm whether the first run's files are replaced."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "Q17",
+   "question": "Trademark status (for WP-Q17). PR #16 shows intent only.",
+   "next_check": "Search USPTO for \"Interpretable Context Methodology\" and \"ICM\" with Jake Van Clief or Eduba as owner, and recheck whether PR #16 has merged."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B8",
+   "question": "Old repo URLs.",
+   "next_check": "Request the three earlier repo names and record whether GitHub redirects them."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "B7",
+   "question": "Lead for the B7 owner. A community wiki claims Eduba runs a twelve-week certification program through a \"Lyceum\" platform, which conflicts with the brief's \"no certification program found\". This is a low-quality source.",
+   "next_check": "Look for the program on eduba.io."
+  },
+  {
+   "wp": "WP-B1",
+   "ref": "Q1",
+   "question": "Lead for WP-Q01. A second repo under the same account, RinDig/icm-architect, ships an agent skill that claims to work in non-Claude agents.",
+   "next_check": "Fetch that repo and confirm license, date and portability claims."
+  }
+ ]
+}
