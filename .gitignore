@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+# Raw API payloads are large and include encrypted search content. They stay local, and in
+# GitHub Actions they are uploaded as a workflow artifact. Everything else in a run is committed.
+runs/*/raw/

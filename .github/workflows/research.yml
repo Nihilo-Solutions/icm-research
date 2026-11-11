@@ -1,0 +1,140 @@
+name: Research run
+
+# Run the harness from the GitHub Actions tab: Actions > Research run > Run workflow.
+# Every run commits its results under runs/ back to main, so the repo is the record.
+# Raw API payloads are uploaded as a workflow artifact instead of committed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "What to do"
+        type: choice
+        options: [run, approve, new, status]
+        default: run
+      stage:
+        description: "Stage (01 to 06) for run or approve"
+        type: string
+        default: "01"
+      run_id:
+        description: "Run ID (blank = latest run)"
+        type: string
+        default: ""
+      label:
+        description: "Label for a new run"
+        type: string
+        default: ""
+      only:
+        description: "Stage 02 only: comma-separated work packages, for example WP-B1,WP-Q06A"
+        type: string
+        default: ""
+      note:
+        description: "Approval note"
+        type: string
+        default: ""
+      force:
+        description: "Redo work packages that already have output"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Use the fake API (no cost)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-run
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Inputs go through env vars, never straight into the script, so they cannot inject shell.
+      IN_COMMAND: ${{ inputs.command }}
+      IN_STAGE: ${{ inputs.stage }}
+      IN_RUN: ${{ inputs.run_id }}
+      IN_LABEL: ${{ inputs.label }}
+      IN_ONLY: ${{ inputs.only }}
+      IN_NOTE: ${{ inputs.note }}
+      IN_FORCE: ${{ inputs.force }}
+      IN_DRY: ${{ inputs.dry_run }}
+      ACTOR: ${{ github.actor }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Check API key
+        if: inputs.command == 'run' && inputs.dry_run == false
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Add the ANTHROPIC_API_KEY repository secret first (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Harness
+        id: harness
+        run: |
+          set -euo pipefail
+          args=()
+          [ -n "$IN_RUN" ] && args+=(--run "$IN_RUN")
+          case "$IN_COMMAND" in
+            new)
+              python harness/icm.py new --label "$IN_LABEL" ;;
+            run)
+              [ -n "$IN_ONLY" ] && args+=(--only "$IN_ONLY")
+              [ "$IN_FORCE" = "true" ] && args+=(--force)
+              [ "$IN_DRY" = "true" ] && args+=(--dry-run)
+              python harness/icm.py run "$IN_STAGE" "${args[@]}" ;;
+            approve)
+              python harness/icm.py approve "$IN_STAGE" --by "$ACTOR" --note "$IN_NOTE" "${args[@]}" ;;
+            status)
+              true ;;
+          esac
+
+      - name: Summary
+        if: always()
+        run: |
+          python harness/icm.py status ${IN_RUN:+--run "$IN_RUN"} >> "$GITHUB_STEP_SUMMARY" 2>&1 || true
+          {
+            echo; echo '```'; python harness/icm.py cost ${IN_RUN:+--run "$IN_RUN"} 2>&1 || true; echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$IN_COMMAND" = "run" ]; then
+            python harness/ci_summary.py "$IN_STAGE" ${IN_RUN:+"$IN_RUN"} >> "$GITHUB_STEP_SUMMARY" || true
+          fi
+
+      - name: Upload raw API payloads
+        if: always() && inputs.command == 'run'
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ github.run_id }}
+          path: runs/*/raw/
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: Commit results
+        if: always() && inputs.command != 'status'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs
+          if git diff --cached --quiet; then
+            echo "No result changes to commit."
+            exit 0
+          fi
+          git commit -m "research: $IN_COMMAND ${IN_STAGE} (${IN_RUN:-latest}) by $ACTOR"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep 5
+          done
+          exit 1
