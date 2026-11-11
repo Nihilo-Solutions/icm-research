@@ -47,6 +47,14 @@ def registry(run: Run) -> SourceRegistry:
     return SourceRegistry(run.dir / "sources.json")
 
 
+def require_text(res, what: str) -> None:
+    """A stage that produced no text must fail loudly, not write an empty file and look done."""
+    if res.refusal:
+        raise SystemExit(f"{what} was declined: {res.refusal.get('category')}: {res.refusal.get('explanation')}")
+    if not res.text.strip():
+        raise SystemExit(f"{what} produced no text (stop_reason {res.stop_reason}). See events.jsonl.")
+
+
 def header(**kv) -> str:
     return "<!-- " + json.dumps(kv) + " -->\n"
 
@@ -58,6 +66,7 @@ async def stage_01(run: Run, cfg: dict, claude: Claude, args) -> str:
     res = await claude.turn(stage=stage, name="plan", model=fm["model"], system=system,
                             user=pre + "<task>Review the work packages in L3_workpackages_yaml against the brief.</task>",
                             effort=fm["effort"], max_tokens=fm["max_tokens"])
+    require_text(res, "plan")
     out = run.out_dir(stage) / "plan-review.md"
     out.write_text(header(models=res.models_served, cost_usd=round(res.cost_usd, 3)) + res.text)
     return f"Wrote {out.relative_to(run.dir)} (${res.cost_usd:.2f})"
@@ -226,6 +235,7 @@ async def stage_04(run: Run, cfg: dict, claude: Claude, args) -> str:
     res = await claude.turn(stage=stage, name="architect", model=fm["model"], system=system,
                             user=pre + f"<ledger>\n{ledger_md}\n</ledger>", effort=fm["effort"],
                             max_tokens=fm["max_tokens"])
+    require_text(res, "architect")
     out = run.out_dir(stage) / "architecture.md"
     out.write_text(header(models=res.models_served, cost_usd=round(res.cost_usd, 3)) + res.text)
     unk = unknown_ids(res.text, claims)
@@ -240,6 +250,7 @@ async def stage_05(run: Run, cfg: dict, claude: Claude, args) -> str:
     res = await claude.turn(stage=stage, name="report", model=fm["model"], system=system,
                             user=pre + f"<ledger>\n{ledger_md}\n</ledger>\n\n<stage_04_output>\n{arch}\n</stage_04_output>",
                             effort=fm["effort"], max_tokens=fm["max_tokens"])
+    require_text(res, "report")
     out = run.out_dir(stage)
     traceable = res.text
     (out / "report-traceable.md").write_text(traceable)
@@ -262,6 +273,7 @@ async def stage_06(run: Run, cfg: dict, claude: Claude, args) -> str:
                             user=pre + "<deterministic_checks>\n" + "\n".join(checks) + "\n</deterministic_checks>\n\n"
                             f"<report>\n{traceable}\n</report>\n\n<ledger>\n{ledger_md}\n</ledger>",
                             effort=fm["effort"], max_tokens=fm["max_tokens"])
+    require_text(res, "redteam")
     out = run.out_dir(stage) / "qa.md"
     out.write_text("# QA\n\n## Deterministic checks\n\n" + "\n".join(f"- {c}" for c in checks)
                    + "\n\n## Red-team review\n\n" + res.text + "\n")

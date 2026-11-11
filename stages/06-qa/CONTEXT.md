@@ -2,7 +2,7 @@
 stage: 06-qa
 model: claude-fable-5-2
 effort: high
-max_tokens: 24000
+max_tokens: 64000
 tools: []
 reference: [brief.md, evidence-standard.md]
 ---

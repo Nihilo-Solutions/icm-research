@@ -117,6 +117,40 @@ def test_real_sdk_request_and_stream_parsing():
         assert reg.by_id()["S1"]["page_age"] == "2025-01-01"
 
 
+class _SeqClient:
+    """Returns canned responses in order and records each request."""
+    def __init__(self, responses):
+        self.responses, self.requests = list(responses), []
+        outer = self
+
+        class _M:
+            def stream(self, **kw):
+                outer.requests.append(json.loads(json.dumps(kw, default=str)))
+                from fake import _Stream
+                return _Stream(outer.responses.pop(0))
+
+        class _B:
+            messages = _M()
+        self.beta = _B()
+
+
+def test_max_tokens_restarts_with_bigger_budget_and_never_says_continue():
+    from fake import _msg
+    thinking_only = _msg("claude-fable-5-2", [{"type": "thinking", "thinking": "", "signature": "s"}], stop="max_tokens")
+    good = _msg("claude-fable-5-2", [{"type": "text", "text": "done"}])
+    client = _SeqClient([thinking_only, good])
+    with tempfile.TemporaryDirectory() as td:
+        run = _FakeRun(Path(td))
+        claude = Claude(run, load_config(), client=client)
+        res = asyncio.run(claude.turn(stage="01-plan", name="plan", model="claude-fable-5-2",
+                                      system=system_blocks([("L0", "x")], "5m"), user="go", max_tokens=16000))
+    assert res.text == "done"
+    assert client.requests[1]["max_tokens"] == 32000
+    assert len(client.requests[1]["messages"]) == 1
+    assert all("Continue" not in json.dumps(r["messages"]) for r in client.requests)
+    assert any(e.get("type") == "retry" for e in run.events_)
+
+
 def test_claim_validation_rules():
     extracted = {"claims": [
         {"ref": "Q6", "status": "confirmed", "statement": "a", "source_ids": ["S1", "S77"], "time_sensitive": True, "next_check": ""},

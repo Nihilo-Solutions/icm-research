@@ -2,7 +2,7 @@
 stage: 05-synthesize
 model: claude-fable-5-2
 effort: high
-max_tokens: 64000
+max_tokens: 128000
 tools: []
 reference: [brief.md, evidence-standard.md, style.md]
 ---

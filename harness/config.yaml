@@ -6,6 +6,7 @@ run:
   concurrency: 3           # parallel workers; Fable 5.2 Start tier is 500k uncached input tokens/min
   request_timeout_s: 900
   max_pause_continuations: 12   # cap on pause_turn resumes per worker
+  max_tokens_ceiling: 128000    # Fable 5.2 max output; thinking tokens count toward max_tokens
 
 api:
   # Beta used for server-side fallback when Fable declines (security topics can trip the cyber classifier).

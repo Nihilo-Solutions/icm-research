@@ -2,7 +2,7 @@
 stage: 04-architect
 model: claude-fable-5-2
 effort: xhigh
-max_tokens: 64000
+max_tokens: 128000
 tools: []
 reference: [brief.md, evidence-standard.md, style.md]
 ---

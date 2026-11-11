@@ -1,0 +1,275 @@
+# L3: Work packages for stage 02. One research worker runs per package.
+# Edit freely before a run (stage 01 reviews this file against the brief).
+# Fields:
+#   refs: brief items this package must settle (B = baseline item, Q = research question)
+#   must_answer: the checklist the worker is graded on
+#   angles: search leads (suggestions, not limits)
+#   start_urls: pages the worker may fetch directly
+#   max_searches / max_fetches: per-worker caps (cost control)
+
+defaults:
+  max_searches: 25
+  max_fetches: 20
+
+packages:
+  - id: WP-B1
+    title: Baseline, the paper and the repo
+    refs: [B1, B2, B3, B4, B5, B6, B8]
+    must_answer:
+      - Exact title, authors, arXiv ID, submission date, latest version number and date, license, peer review status
+      - Repo URL, license file contents, latest commit or release date, stars and contributors if shown
+      - Whether the paper and repo describe numbered stage folders with output/ handoff, per-stage markdown roles, local scripts, human review between stages
+      - Whether the five layers L0 to L4 are named as in the brief, with the same file names
+      - What the paper says about its evidence base (user count, models, comparisons, task types) and its stated poor-fit cases
+      - Where the "map, not an engine" critique and the no memory, no run history, overwrite, no versioning critiques appear, and who made them
+      - Any primary mention of "Model Workspace Protocol" or "MWP"
+    angles:
+      - arXiv abs page and version history for 2603.16021
+      - GitHub repo README, LICENSE, releases, commits, issues, discussions
+      - '"Interpretable Context Methodology" critique OR review'
+      - '"Model Workspace Protocol"'
+    start_urls:
+      - https://arxiv.org/abs/2603.16021
+      - https://github.com/RinDig/Interpretable-Context-Methodology
+
+  - id: WP-B2
+    title: Baseline, the ecosystem around ICM
+    refs: [B7]
+    must_answer:
+      - What Eduba (eduba.io) sells, whether it names ICM, who runs it
+      - Clief Notes community on Skool, member count shown on the page, tiers and prices shown
+      - Whether "Taurus", an "icm-template" skill set, and a workspace generator exist, where, by whom, how mature
+      - Whether any official partner, certification, or implementer program exists
+    angles:
+      - eduba.io
+      - skool.com Clief Notes
+      - GitHub search icm-template, Taurus ICM launcher, ICM workspace generator
+    start_urls:
+      - https://eduba.io
+
+  - id: WP-Q01
+    title: Q1, validity and current progress of ICM
+    refs: [Q1]
+    must_answer:
+      - Latest paper version and repo state, and every change since March 2026
+      - Follow-up papers, official tooling, enterprise case studies, talks, with dates
+      - Independent evidence (not from authors or community) comparing ICM-style staged context with single large prompts, RAG, or agent frameworks, on quality, cost, or reliability
+      - If no direct independent evidence exists, the closest independent evidence on related techniques (context engineering, file-based agent memory, staged pipelines with human review), clearly labeled as indirect
+    angles:
+      - arXiv citations of 2603.16021 (Semantic Scholar, Google Scholar)
+      - Anthropic engineering posts on context engineering, agent skills, CLAUDE.md
+      - Research on prompt chaining versus single prompts, and on human-in-the-loop staged pipelines
+
+  - id: WP-Q02
+    title: Q2, model portability
+    refs: [Q2]
+    must_answer:
+      - Whether ICM as published depends on Claude Code features (automatic CLAUDE.md loading, skills, subagents, hooks, slash commands)
+      - How each of those features behaves, or is absent, in the Claude API, Claude Agent SDK, Claude in Microsoft Foundry, Claude on Amazon Bedrock, Claude on Google Cloud
+      - Whether the Agent SDK can load CLAUDE.md and skills from a folder, and on which platforms it works
+      - What breaks with non-Claude models (GPT, Gemini, open models) and whether AGENTS.md or similar conventions cover the same ground
+      - Any reports of ICM run on non-Claude models
+    angles:
+      - Claude Agent SDK docs on settings sources, CLAUDE.md, skills, subagents, hooks
+      - Claude in Microsoft Foundry docs and feature limitations
+      - AGENTS.md convention
+    start_urls:
+      - https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry
+
+  - id: WP-Q03
+    title: Q3, gaps between ICM and enterprise needs
+    refs: [Q3]
+    must_answer:
+      - For each gap (run history, versioning, memory, concurrency, multi-user editing, access control per layer and stage, secrets handling, scheduling, error handling, testing and evals, rollback), the best existing product, open-source tool, or pattern, and its maturity with evidence (GA or preview, release date, adoption signals)
+    angles:
+      - Git-based versioning for agent workspaces, durable workflow engines (Temporal, Azure Durable Functions), LLM eval tools (promptfoo, Azure AI Foundry evaluations, Anthropic eval tooling), agent tracing (OpenTelemetry GenAI semantic conventions), secrets managers
+      - Claude Managed Agents and Claude Agent SDK features for sessions, memory, and permissions
+
+  - id: WP-Q04A
+    title: Q4, Microsoft surfaces for non-technical users
+    refs: [Q4]
+    must_answer:
+      - For Microsoft 365 Copilot, Copilot Studio agents, Teams bots, and SharePoint or OneDrive-synced folders, cover which ICM layers each can represent, MCP support (with doc link and GA or preview status), admin and security controls, cost per seat or per message, setup effort, and fit for 5-person versus 5,000-person companies
+      - Whether Copilot Studio or Foundry agents can use Claude models today, and on what terms
+      - SharePoint limits relevant to ICM (permissions granularity, versioning, file sync limits)
+    angles:
+      - Microsoft Learn Copilot Studio MCP, Copilot Studio licensing, Microsoft 365 Copilot pricing, Teams AI library or Microsoft 365 Agents SDK, SharePoint permissions and versioning
+    start_urls:
+      - https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
+
+  - id: WP-Q04B
+    title: Q4, Anthropic, Google, Slack, and custom surfaces
+    refs: [Q4]
+    must_answer:
+      - For Claude Team and Enterprise (Projects, skills, connectors, admin controls), Claude desktop app, Claude Code via desktop app or IDE, Google Workspace, Slack, and a custom web app on an agent runtime (Claude Agent SDK, Claude Managed Agents, Azure AI Foundry Agent Service), cover which ICM layers each can represent, MCP support, admin and security controls, cost per seat, setup effort, and fit for 5-person versus 5,000-person companies
+      - Current Claude Team and Enterprise seat prices and admin features from Anthropic's own pages, with access date
+    angles:
+      - claude.com pricing, Anthropic support articles on Projects, skills, connectors, admin controls, audit logs
+      - Claude in Slack, Gemini or Google Workspace agent options with MCP
+      - Azure AI Foundry Agent Service docs and pricing
+
+  - id: WP-Q05
+    title: Q5, hosting models
+    refs: [Q5]
+    must_answer:
+      - For Nihilo-hosted, client-tenant, and hybrid, cover data residency, processor obligations and contracts (DPA, BAA, subprocessor lists), security review friction, required certifications, liability and insurance (cyber, tech E&O), operating cost and margin, buyout or transfer path, and how regulated mid-market buyers (finance, healthcare-adjacent, legal) react
+      - What Anthropic and Microsoft require of a company that resells or hosts Claude for third parties (commercial terms, BAA availability, data retention, zero data retention eligibility)
+      - Azure Lighthouse and multi-tenant patterns for MSP-style managed services
+    angles:
+      - Anthropic commercial terms, DPA, BAA, usage policy for third-party apps
+      - Microsoft Products and Services DPA, Azure Lighthouse docs
+      - GDPR Article 28 processor obligations, HIPAA business associate rules (HHS)
+      - Vendor risk management expectations in financial services (FFIEC, SEC, NYDFS Part 500 third-party service provider rules)
+
+  - id: WP-Q06A
+    title: Q6, Azure reference architecture and Claude in Foundry
+    refs: [Q6]
+    must_answer:
+      - Which Claude models are in the Microsoft Foundry catalog today, in which regions or deployment types, on what terms (Marketplace billing, hosted on Azure versus hosted on Anthropic, data processing location), with access date
+      - Azure services for agent runtime (Container Apps, Container Apps dynamic sessions, Functions, AKS), storage and versioning, Entra ID and managed identities, Key Vault and CMK, private endpoints and VNet integration, scheduling and queues (Service Bus, Durable Functions, Logic Apps)
+      - Which Foundry features do not apply to Claude deployments (for example private networking, content filters, data zones)
+    angles:
+      - Microsoft Learn Claude in Foundry, Anthropic docs claude-in-microsoft-foundry, Azure Marketplace Anthropic listing
+    start_urls:
+      - https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry
+
+  - id: WP-Q06B
+    title: Q6, AWS and Google Cloud reference architectures
+    refs: [Q6]
+    must_answer:
+      - Which Claude models are on Amazon Bedrock and on Google Cloud (Google managed and Anthropic managed) today, in which regions, on what terms, with access date
+      - Equivalent AWS and GCP services for runtime, storage, identity, secrets, networking, scheduling
+      - Claude Platform on AWS and what it changes
+    angles:
+      - AWS Bedrock model support by region, Bedrock AgentCore, Google Cloud Vertex AI Claude model garden regions
+      - Anthropic docs claude-in-amazon-bedrock, claude-platform-on-aws, claude-models-on-google-cloud
+
+  - id: WP-Q07
+    title: Q7, scalability
+    refs: [Q7]
+    must_answer:
+      - Concrete limits with sources: context windows of current Claude models, API rate limits by tier, Foundry and Bedrock quotas for Claude, MCP connection or tool count limits in Claude products and Copilot Studio, file count or size limits in SharePoint sync and Git hosting
+      - Where folder-as-architecture breaks (concurrent runs writing the same output folder, many departments, large reference sets) and which pattern fixes each (workspace per department, shared L0 to L3 library with per-team L4, branch per run, job queue)
+    angles:
+      - Anthropic rate limits page, Foundry quotas for Anthropic models, Bedrock quotas, OneDrive sync limits, GitHub repository limits
+
+  - id: WP-Q08A
+    title: Q8, Microsoft 365, Google Workspace, Salesforce, HubSpot, Dynamics 365
+    refs: [Q8]
+    must_answer:
+      - For each system, connection method (official MCP server, vendor API, Microsoft Graph, Power Automate or Logic Apps connector), maturity (GA, preview, community), auth model, and the safest way to grant write access
+      - Which official MCP servers exist from Microsoft, Google, Salesforce, HubSpot, with doc links and status
+    angles:
+      - Microsoft MCP servers catalog, Dynamics 365 MCP server, Salesforce MCP, HubSpot MCP server, Google Workspace MCP
+
+  - id: WP-Q08B
+    title: Q8, SAP, NetSuite, QuickBooks, ServiceNow, Jira, databases, file shares, mainframe
+    refs: [Q8]
+    must_answer:
+      - Same fields as WP-Q08A for SAP, NetSuite, QuickBooks, ServiceNow, Jira, on-prem SQL Server and Oracle, file shares, and mainframe or green-screen systems with no API
+      - Gateways for on-prem (on-premises data gateway, Azure Arc, Azure Relay, private link), RPA options (Power Automate desktop), and their auth models
+    angles:
+      - SAP MCP or SAP BTP AI, NetSuite AI connector or MCP, Intuit QuickBooks MCP, ServiceNow MCP, Atlassian remote MCP server, Microsoft on-premises data gateway, Power Automate desktop for mainframe terminal emulation
+
+  - id: WP-Q09
+    title: Q9, MCP governance in the enterprise
+    refs: [Q9]
+    must_answer:
+      - Current MCP spec version and its authorization model (OAuth 2.1, resource indicators), with the spec page
+      - Gateways and registries (Azure API Management MCP support, Microsoft MCP registry or Entra controls, Anthropic org-level connector controls, AWS and Google offerings, security vendors)
+      - Allowlisting, per-tool permission scoping, logging
+      - Known vulnerability classes (tool poisoning, rug-pull updates, confused deputy, token passthrough) with primary write-ups and any CVEs
+    angles:
+      - modelcontextprotocol.io specification authorization and security best practices
+      - Azure API Management MCP server docs, Copilot Studio MCP governance, Claude Enterprise connector admin controls
+      - OWASP MCP guidance, vendor research on tool poisoning
+    start_urls:
+      - https://modelcontextprotocol.io/specification
+
+  - id: WP-Q10
+    title: Q10, cross-department use
+    refs: [Q10]
+    must_answer:
+      - Patterns for shared versus department-private layers, with examples from vendor docs (for example Claude Enterprise projects and permissions, SharePoint permission inheritance, Purview sensitivity labels, Git CODEOWNERS and branch protection)
+      - Controls that prevent data from one department reaching another department's agent (identity-scoped retrieval, separate workspaces, DLP), with sources
+      - Safe change workflow for non-technical owners (pull request review in a web UI, SharePoint approvals, Power Automate approvals)
+    angles:
+      - Microsoft Purview DLP for Copilot, SharePoint restricted access control, GitHub CODEOWNERS docs, oversharing guidance for Copilot
+
+  - id: WP-Q11
+    title: Q11, security controls
+    refs: [Q11]
+    must_answer:
+      - The current OWASP Top 10 for LLM Applications (version and date), each item mapped to an ICM-specific risk and control
+      - Relevant MITRE ATLAS techniques with IDs
+      - Controls for indirect prompt injection through files and connectors, excessive agency, exfiltration through tool calls, secrets in context files, least-privilege tools, and isolating untrusted-input research steps from action steps, per hosting model
+      - Vendor controls available today (Azure AI Content Safety Prompt Shields, Anthropic guidance on prompt injection, Microsoft Defender for Cloud AI threat protection)
+    angles:
+      - genai.owasp.org LLM Top 10, atlas.mitre.org, Microsoft Prompt Shields docs, Anthropic prompt injection guidance
+    start_urls:
+      - https://genai.owasp.org/llm-top-10/
+      - https://atlas.mitre.org/
+
+  - id: WP-Q12
+    title: Q12, monitoring, logging, and oversight
+    refs: [Q12]
+    must_answer:
+      - What each named tool does for this use case, with doc links: Azure Monitor and Log Analytics, Microsoft Sentinel, Microsoft Purview (audit for AI interactions, DSPM for AI), OpenTelemetry GenAI semantic conventions (status), Foundry tracing, Anthropic Console logs or Claude Enterprise audit logs and compliance API
+      - Retention and immutability options (Log Analytics retention, immutable Blob storage), PII handling (redaction), alerting
+      - A concrete event schema and the compliance-officer dashboard
+    angles:
+      - Microsoft Learn Foundry tracing, Purview audit Copilot interactions, Log Analytics retention, immutable storage WORM, OpenTelemetry semantic conventions gen-ai
+
+  - id: WP-Q13
+    title: Q13, compliance mapping and costs
+    refs: [Q13]
+    must_answer:
+      - Which SOC 2 Trust Services Criteria apply, from AICPA sources
+      - NIST AI RMF 1.0 functions and the Generative AI Profile (NIST AI 600-1) actions that logging, review gates, and versioning satisfy
+      - ISO/IEC 42001 and ISO/IEC 27001 controls that apply
+      - EU AI Act obligations and dates relevant to a deployer or provider of this kind of system, including any changes from the digital omnibus
+      - Realistic first certification for a two-to-three person firm, with cited cost and timeline figures, or estimates labeled as such with basis
+    angles:
+      - AICPA Trust Services Criteria, NIST AI 600-1, ISO 42001 overview, EU AI Act implementation timeline, SOC 2 cost for startups from auditors or compliance automation vendors (Vanta, Drata) with their published figures
+
+  - id: WP-Q14
+    title: Q14, packaging and pricing comparables
+    refs: [Q14]
+    must_answer:
+      - Public prices for comparable offers: AI automation agencies, Microsoft partners selling Copilot readiness or deployment, managed AI services, Anthropic or Microsoft partner packaged offers on marketplaces
+      - Microsoft funded programs that pay partners for Copilot or AI deployments, if any, with current terms
+      - Proposed tiers for 5 to 50, mid-market, enterprise, every price cited or marked estimate with basis
+    angles:
+      - Azure Marketplace and AppSource consulting offers for Copilot and Azure OpenAI (they list prices), AI automation agency pricing pages, Microsoft partner incentives for Copilot
+
+  - id: WP-Q15
+    title: Q15, selling enterprise builds as a tiny firm
+    refs: [Q15]
+    must_answer:
+      - Common enterprise vendor requirements (SIG or CAIQ questionnaires, insurance limits, SOC 2 or ISO, references, background checks), with sources
+      - Procurement paths: Azure Marketplace transactable offers and consulting offers, Microsoft AI Cloud Partner Program designations and requirements, Anthropic partner programs
+      - Shortest credible path to a first enterprise deal and the proof points that matter
+    angles:
+      - Shared Assessments SIG, CSA CAIQ, Microsoft partner center marketplace consulting services requirements, Anthropic partner network
+
+  - id: WP-Q16
+    title: Q16, competitors and differentiation
+    refs: [Q16]
+    must_answer:
+      - Firms selling ICM implementations or close equivalents (context engineering services, company brain, AI knowledge workspaces), with what they sell and prices if public
+      - How Claude Enterprise, Microsoft 365 Copilot with Copilot Studio, Glean, and similar products cover the need natively, with current feature pages
+      - What a small firm can offer that they do not
+    angles:
+      - context engineering consultancy, company brain AI, Glean agents pricing, Claude Enterprise features
+
+  - id: WP-Q17
+    title: Q17, IP and naming
+    refs: [Q17, B7]
+    must_answer:
+      - Exact license texts for the paper (arXiv license field) and repo (LICENSE file) and what they permit commercially with attribution
+      - USPTO and EUIPO results for "Interpretable Context Methodology", "ICM" in software and consulting classes (9, 35, 42), "Eduba", "Clief Notes"; if the search tools cannot be loaded, give exact manual search steps
+      - Safe attribution language for a Nihilo-branded offer
+    angles:
+      - tmsearch.uspto.gov, euipo.europa.eu eSearch, TMview
+    start_urls:
+      - https://tmsearch.uspto.gov/

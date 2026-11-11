@@ -108,43 +108,53 @@ class Claude:
 
     # ------------------------------------------------------------------
     async def turn(self, *, stage: str, name: str, model: str, system: list[dict], user: str,
-                   tools: list[dict] | None = None, effort: str = "high", max_tokens: int = 32000,
+                   tools: list[dict] | None = None, effort: str = "high", max_tokens: int = 64000,
                    output_format: dict | None = None, allow_fallback: bool = True) -> TurnResult:
-        """Run one full assistant turn, following pause_turn and one max_tokens continuation."""
-        messages: list[dict] = [{"role": "user", "content": user}]
-        result = TurnResult()
-        max_cont = int(self.cfg["run"]["max_pause_continuations"])
-        max_token_retries = 1
-        async with self.sem:
-            for i in range(max_cont + 1):
-                msg = await self._request(stage, f"{name}.{i:02d}", model, system, messages, tools,
-                                          effort, max_tokens, output_format, allow_fallback)
-                result.blocks.extend(msg["content"])
-                result.stop_reason = msg.get("stop_reason") or ""
-                result.models_served.append(msg.get("model", model))
-                for b in msg["content"]:
-                    if b.get("type") == "fallback":
-                        result.fallbacks.append(b)
-                _accumulate(result.usage, msg.get("usage") or {})
-                result.cost_usd += msg["_cost_usd"]
+        """Run one full assistant turn, following pause_turn continuations.
 
-                if result.stop_reason == "pause_turn":
-                    messages.append({"role": "assistant", "content": msg["content"]})
+        If the turn runs out of output tokens before writing any text (thinking ate the budget),
+        restart it once from scratch with double the budget. Never ask the model to "continue"
+        a cut-off turn: resending a bare thinking block with that request is treated as an attempt
+        to extract reasoning and is refused (refusal category reasoning_extraction)."""
+        ceiling = int(self.cfg["run"].get("max_tokens_ceiling", 128000))
+        max_cont = int(self.cfg["run"]["max_pause_continuations"])
+        async with self.sem:
+            for attempt in range(2):
+                messages: list[dict] = [{"role": "user", "content": user}]
+                result = TurnResult()
+                for i in range(max_cont + 1):
+                    msg = await self._request(stage, f"{name}.a{attempt}.{i:02d}", model, system, messages,
+                                              tools, effort, max_tokens, output_format, allow_fallback)
+                    result.blocks.extend(msg["content"])
+                    result.stop_reason = msg.get("stop_reason") or ""
+                    result.models_served.append(msg.get("model", model))
+                    for b in msg["content"]:
+                        if b.get("type") == "fallback":
+                            result.fallbacks.append(b)
+                    _accumulate(result.usage, msg.get("usage") or {})
+                    result.cost_usd += msg["_cost_usd"]
+                    if result.stop_reason == "pause_turn":
+                        messages.append({"role": "assistant", "content": msg["content"]})
+                        continue
+                    if result.stop_reason == "refusal":
+                        result.refusal = msg.get("stop_details") or {"type": "refusal"}
+                    break
+                no_text = not result.text.strip()
+                if result.stop_reason == "max_tokens" and no_text and attempt == 0 and max_tokens < ceiling:
+                    self.run.log_event({"type": "retry", "stage": stage, "name": name,
+                                        "reason": "max_tokens before any text", "old_max_tokens": max_tokens,
+                                        "new_max_tokens": min(max_tokens * 2, ceiling),
+                                        "wasted_usd": round(result.cost_usd, 4)})
+                    max_tokens = min(max_tokens * 2, ceiling)
                     continue
-                if result.stop_reason == "max_tokens" and max_token_retries > 0:
-                    max_token_retries -= 1
-                    messages.append({"role": "assistant", "content": msg["content"]})
-                    messages.append({"role": "user", "content":
-                                     "You hit the output limit. Continue exactly where you stopped. "
-                                     "Do not repeat earlier text."})
-                    continue
-                if result.stop_reason == "refusal":
-                    result.refusal = msg.get("stop_details") or {"type": "refusal"}
-                break
+                if result.stop_reason == "max_tokens":
+                    self.run.log_event({"type": "warning", "stage": stage, "name": name,
+                                        "warning": "output cut off at max_tokens; raise max_tokens for this stage"})
+                return result
         return result
 
     async def extract_json(self, *, stage: str, name: str, model: str, schema: dict,
-                           instructions: str, content: str, max_tokens: int = 16000) -> dict:
+                           instructions: str, content: str, max_tokens: int = 32000) -> dict:
         """Mechanical structured extraction (no tools, no citations, so JSON outputs are allowed)."""
         sys = [{"type": "text", "text": instructions}]
         res = await self.turn(stage=stage, name=name, model=model, system=sys, user=content,
@@ -175,6 +185,10 @@ class Claude:
             kwargs["betas"] = [self.cfg["api"]["fallback_beta"]]
 
         raw_dir = self.run.raw_dir(stage)
+        base, k = name, 1
+        while (raw_dir / f"{name}.request.json").exists():
+            k += 1
+            name = f"{base}.r{k}"
         (raw_dir / f"{name}.request.json").write_text(json.dumps(kwargs, indent=1, default=str))
         try:
             msg, request_id = await self._stream(kwargs)

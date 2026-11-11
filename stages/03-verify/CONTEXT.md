@@ -2,7 +2,7 @@
 stage: 03-verify
 model: claude-fable-5-2
 effort: high
-max_tokens: 16000
+max_tokens: 32000
 tools: [web_fetch, web_search]
 reference: [evidence-standard.md]
 extract_model: claude-sonnet-5-5
