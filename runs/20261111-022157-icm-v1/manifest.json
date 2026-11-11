@@ -80,6 +80,25 @@
         "stages/05-synthesize/CONTEXT.md": "2349fc219c1dc9e0102d228904e1dd0c614c71f79804880b880f0cee6cb7dd59",
         "stages/06-qa/CONTEXT.md": "6df243f097b4b8c858df019507ee2d9bf1010e928f368584d6cd712690e45121"
       }
+    },
+    {
+      "at": "2026-11-11T08:43:01+00:00",
+      "reason": "manual refresh",
+      "git_commit": "a0f430fbcae89e2d8cd7e644fe8b8bf55a5751bf",
+      "files": {
+        "CLAUDE.md": "130fc1f677e7b09bf68f98c67db3cad8446ab924efd3258674aa55fb0178a516",
+        "CONTEXT.md": "599becb26af2d2a848629ee41ff88146686261e6841f6e6228cf272eee38c9c2",
+        "reference/brief.md": "14af2ee46e0ca9e68ac73b367e80e17d3d97668ad7c49567f233517eb75d9393",
+        "reference/evidence-standard.md": "9b7154a483be286224a7081e73f2db244a1f8442038170e955c9e9f519e36fb1",
+        "reference/style.md": "972a7dcc75517da7a8a040e36c954f30adfa40c568ddcde96512d1e89ad5b71a",
+        "reference/workpackages.yaml": "40d6d190b951512715fb76fc8796df2dca96830a33cc95c715b3734c61c28a2a",
+        "stages/01-plan/CONTEXT.md": "1ffa7792f3449f9ad2177f8a5fcc2ae681e3075ddd43770f0e729ad948bb4add",
+        "stages/02-research/CONTEXT.md": "546c8a7d313ea100bc3eb55f81bf76db3cd7b47dfa3de6135b6928df3298e35e",
+        "stages/03-verify/CONTEXT.md": "6f520cdd868a8a2f503d770202327e288a9f50280e6cbf26b110826273b4fa3c",
+        "stages/04-architect/CONTEXT.md": "8ed5f4520774a7ed1f0caba8fe5ef82a975ad9744f2a4f5ec6c02fb0cd45b9ab",
+        "stages/05-synthesize/CONTEXT.md": "2349fc219c1dc9e0102d228904e1dd0c614c71f79804880b880f0cee6cb7dd59",
+        "stages/06-qa/CONTEXT.md": "6df243f097b4b8c858df019507ee2d9bf1010e928f368584d6cd712690e45121"
+      }
     }
   ],
   "approvals": {

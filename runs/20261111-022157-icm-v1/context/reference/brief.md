@@ -19,6 +19,7 @@ Use web search heavily. Prefer, in order: vendor documentation (Microsoft Learn,
 ## Context: who Nihilo is
 
 * Two active owners: one AI/cloud engineer (Azure and AWS architect certifications, security background, day job at an MSP) and one non-technical marketing lead. A semi-technical salesperson with a finance background is joining. Capacity is part-time, about 2-5 hours a day each.
+* Nihilo has no affiliation with the ICM authors (Jake Van Clief, David McDermott) or with Eduba. Nihilo's co-founder Jake is a different person.
 * Zero clients today. Goal by November 2027: 10 clients, $100k revenue, 5 external case studies, one productized offer.
 * Positioning: production AI with enterprise security posture (audit trails, least privilege, logged and replayable agent actions). Long-term plan to pursue SOC 2 and an AI governance standard once revenue allows.
 * Target buyers: first, small knowledge-work firms and early startups (5-50 people); second, mid-market and enterprise companies.
