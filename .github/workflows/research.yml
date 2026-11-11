@@ -132,7 +132,11 @@ jobs:
             echo "No result changes to commit."
             exit 0
           fi
-          git commit -m "research: $IN_COMMAND ${IN_STAGE} (${IN_RUN:-latest}) by $ACTOR"
+          case "$IN_COMMAND" in
+            new) msg="research: new run ${IN_LABEL:-unlabeled} by $ACTOR" ;;
+            *)   msg="research: $IN_COMMAND stage $IN_STAGE (${IN_RUN:-latest run}) by $ACTOR" ;;
+          esac
+          git commit -m "$msg"
           for i in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep 5
