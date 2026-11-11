@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q04A", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 2.375, "searches": 16, "fetches": 20} -->
+<!-- {"wp": "WP-Q04A", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q04A: Q4, Microsoft surfaces for non-technical users
 
 ### Findings
@@ -258,4 +258,4 @@ All pages were accessed 2026-11-11. Page dates are the pages' own `ms.date` valu
 - S205: Build or Reuse MCP Servers for a Microsoft 365 Copilot Plugin https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/build-reuse-mcp-servers
 - S206: Microsoft 365 E7 and Agent 365 are now generally available https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-e7-and-agent-365-are-now-generally-available/4516295
 
-_153 search results consulted; 36 sources cited._
+_153 search results consulted; 36 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

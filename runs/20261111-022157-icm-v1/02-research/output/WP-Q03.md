@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q03", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 1.662, "searches": 18, "fetches": 20} -->
+<!-- {"wp": "WP-Q03", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q03: Q3, gaps between ICM and enterprise needs
 
 ### Findings
@@ -258,4 +258,4 @@ Must answer: for each gap, the best existing product, tool, or pattern, and its 
 - S154: Releases · open-telemetry/semantic-conventions · GitHub https://github.com/open-telemetry/semantic-conventions/releases
 - S155: semantic-conventions-genai/docs/gen-ai/gen-ai-agent-spans.md at main · open-telemetry/semantic-conventions-genai · GitHub https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md
 
-_169 search results consulted; 39 sources cited._
+_169 search results consulted; 39 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

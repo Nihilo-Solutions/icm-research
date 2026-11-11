@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-B2", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 1.222, "searches": 12, "fetches": 20} -->
+<!-- {"wp": "WP-B2", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-B2: Baseline, the ecosystem around ICM
 
 ### Findings
@@ -149,4 +149,4 @@ All pages were accessed 2026-11-11. No page showed its own date unless noted.
 - S86: Release Taurus 0.7.7 — Taurus on the Mac · astetic-dev/taurus · GitHub https://github.com/astetic-dev/taurus/releases/tag/v0.7.7
 - S87: icm-field-guide/NOTICE.md at main · jonathanmalkin/icm-field-guide · GitHub https://github.com/jonathanmalkin/icm-field-guide/blob/main/NOTICE.md
 
-_112 search results consulted; 19 sources cited._
+_112 search results consulted; 19 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

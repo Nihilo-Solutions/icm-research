@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q04C", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 1.727, "searches": 13, "fetches": 20} -->
+<!-- {"wp": "WP-Q04C", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q04C: Q4, Google Workspace, Slack, and custom web app runtimes
 
 ### Findings
@@ -227,4 +227,4 @@ Q4, for Google Workspace, Slack, and a custom web app on an agent runtime. The t
 - S222: As an administrator, you control whether your users can: https://knowledge.workspace.google.com/admin/gemini/turn-gem-sharing-on-or-off
 - S223: Google Workspace Updates: Use your Gems in your Google Workspace Studio flows https://workspaceupdates.googleblog.com/2026/04/use-your-gems-in-your-google-workspace-studio-flows.html
 
-_122 search results consulted; 17 sources cited._
+_122 search results consulted; 17 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

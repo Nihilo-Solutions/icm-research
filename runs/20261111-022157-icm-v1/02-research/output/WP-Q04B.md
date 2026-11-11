@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q04B", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 2.186, "searches": 11, "fetches": 17} -->
+<!-- {"wp": "WP-Q04B", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q04B: Q4, Anthropic surfaces
 
 ### Findings
@@ -212,4 +212,4 @@ Q4, Anthropic surfaces only. All three surfaces come with the same seat, so ther
 - S171: Use Claude Code with your Team or Enterprise plan | Claude Help Center https://support.claude.com/en/articles/11845131-use-claude-code-with-your-team-or-enterprise-plan
 - S172: Claude Teams vs Enterprise (2026): Team Plan Price and Seats https://www.layer3labs.io/comparisons/claude-team-vs-enterprise
 
-_104 search results consulted; 17 sources cited._
+_104 search results consulted; 17 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

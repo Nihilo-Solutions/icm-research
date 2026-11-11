@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q01", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 1.971, "searches": 20, "fetches": 20} -->
+<!-- {"wp": "WP-Q01", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q01: Q1, validity and current progress of ICM
 
 ### Findings
@@ -172,4 +172,4 @@ All sources were accessed 2026-11-11. "Indirect" means the study is independent 
 - S118: Anthropic: How we built our multi-agent research system https://simonwillison.net/2025/Jun/14/multi-agent-research-system/
 - S119: Building effective AI agents \ Anthropic https://www.anthropic.com/research/building-effective-agents
 
-_184 search results consulted; 28 sources cited._
+_184 search results consulted; 28 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._

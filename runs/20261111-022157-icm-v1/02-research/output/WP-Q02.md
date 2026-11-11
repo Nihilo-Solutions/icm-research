@@ -1,4 +1,4 @@
-<!-- {"wp": "WP-Q02", "models": ["claude-fable-5-2"], "fallbacks": 0, "stop_reason": "end_turn", "cost_usd": 1.761, "searches": 10, "fetches": 13} -->
+<!-- {"wp": "WP-Q02", "models": ["claude-fable-5-2"], "rendered_from_raw": true, "claims_extracted": false} -->
 # WP-Q02: Q2, model portability
 
 ### Findings
@@ -185,4 +185,4 @@ Non-Claude models: by design yes, by evidence unknown. All of the paper's testin
 - S100: GitHub - KakkoiDev/icm-runtime: Interpretable Context Methodology (ICM) - bash runtime + reusable coding agent skills for structured multi-stage AI workflows · GitHub https://github.com/KakkoiDev/icm-runtime
 - S101: Claude Code vs Codex vs OpenCode on Local Models (Ollama) · Aliteq https://aliteq.com/run-coding-agents-on-local-models-ollama
 
-_94 search results consulted; 19 sources cited._
+_94 search results consulted; 19 sources cited. Claims not yet extracted (credit ran out); the next run 02 extracts them._
